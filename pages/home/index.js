@@ -15,10 +15,12 @@ const Item = styled(Paper)(({ theme }) => ({
     color: theme.palette.text.secondary,
 }));
 const initialXY = [{ x: 120, y: 0 }, { x: 0, y: 120 }, { x: 0, y: -120 }, { x: -120, y: 0 }]//, { x: -120, y: -120 }, { x: 120, y: -120 }]
+let wiss = "WISSENAIRE'23 Presents"
 let string = "AETERNUM REIS";
 let belowString = "REDFINING AUTOMOBILE AND TRANSPORTATION TECHNOLOGY IN THE LIGHT OF ACCRESCENT EXIGENCIES"
 let usingSpread = string.split('');
 let newSpread = belowString.split('');
+let ogSpread = wiss.split('');
 export default function Home() {
     return (
         <NoSsr>
@@ -28,9 +30,11 @@ export default function Home() {
                     justifyContent="center"
                     alignItems="center"
                 >
-                    <Grid item xs={12} md={7}>
+                    <Grid item xs={12} md={7} style={{marginTop:"-100px"}}>
                         <Stack spacing={4}>
-                            <p style={{ fontSize: "5vh" }}>WISSENAIRE'23</p>
+                            <p style={{ fontSize: "5vh" }}>
+                                <AnimationUtility word={ogSpread} initialXY={initialXY} />
+                            </p>
                             <Typography style={{ fontSize: "10.2vmin" }}>
                                 <AnimationUtility word={usingSpread} initialXY={initialXY} />
                             </Typography>
