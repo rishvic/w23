@@ -1,4 +1,4 @@
-import * as React from 'react'
+import {useEffect,useState} from 'react'
 import { styled } from '@mui/material/styles'
 import Box from '@mui/material/Box'
 import Paper from '@mui/material/Paper'
@@ -9,6 +9,7 @@ import { motion } from 'framer-motion'
 import AnimationUtility from '../../Utility/animationUtility'
 import { Example } from '../../Utility/SideBar/Example'
 import HorizontalScroll from '../../Utility/horizontalScroll/HorizontalScroll'
+import Loader from '../../Utility/Loader'
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
   ...theme.typography.body2,
@@ -29,8 +30,15 @@ let usingSpread = string.split('')
 let newSpread = belowString.split('')
 let ogSpread = wiss.split('')
 export default function Home() {
+  const [loading, setLoading] = useState(false)
+  useEffect(() => {
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 6000)
+  }, []);
   return (
-    <>
+   loading?(<Loader/>):( <>
       <NoSsr>
         <Example />
         <Box>
@@ -57,6 +65,6 @@ export default function Home() {
         </Box>
       </NoSsr>
       <HorizontalScroll />
-    </>
+    </>)
   )
 }
