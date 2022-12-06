@@ -37,11 +37,13 @@ export default function Home() {
     }, 6000)
   }, []);
   return (
-    false ? (<Loader />) : (<div>
+    false ? (
+      <Loader />
+    ) : (<div>
       <NoSsr>
         <div>
           <Example />
-          <Grid container spacing={13} style={{ color: "white", fontWeight: "900", mixBlendMode: "difference", position: "absolute", top: "30px" }}>
+          {/* <Grid container spacing={13} style={{ color: "white", fontWeight: "900", mixBlendMode: "difference", position: "absolute", top: "30px" }}>
             <Grid item xs={12} md={7} style={{ textAlign: "center" }}>
               <Stack>
                 <Typography style={{ fontSize: '10.2vmin' }}>
@@ -61,11 +63,10 @@ export default function Home() {
             <Grid item xs={12} md={5} style={{}}>
               {/* <Item>xs=4</Item> */}
 
-              <HorizontalScroll />
-            </Grid>
-          </Grid>
-          <BackgrounVideoPlayer />
-
+          {/* <HorizontalScroll /> */}
+          {/* </Grid> */}
+          {/* </Grid> */}
+          {/* <BackgrounVideoPlayer /> */}
         </div>
       </NoSsr>
     </div>)
