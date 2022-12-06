@@ -35,40 +35,53 @@ export default function Home() {
     setTimeout(() => {
       setLoading(false)
     }, 6000)
-  }, []);
-  return (
-    false ? (
-      <Loader />
-    ) : (<div>
+  }, [])
+  return false ? (
+    <Loader />
+  ) : (
+    <div style={{ overflow:"auto" }}>
       <NoSsr>
         <div>
           <Example />
-          {/* <Grid container spacing={13} style={{ color: "white", fontWeight: "900", mixBlendMode: "difference", position: "absolute", top: "30px" }}>
-            <Grid item xs={12} md={7} style={{ textAlign: "center" }}>
+          <Grid
+            container
+            spacing={13}
+            style={{
+              color: 'white',
+              fontWeight: '900',
+              mixBlendMode: 'difference',
+              position: 'absolute',
+              top: '30px',
+            }}
+          >
+            <Grid item xs={12} md={7} style={{ textAlign: 'center' }}>
               <Stack>
                 <Typography style={{ fontSize: '10.2vmin' }}>
-                  <p style={{ fontSize: '3vh', marginBottom: "-60px", }}>
+                  <p style={{ fontSize: '3vh', marginBottom: '-60px' }}>
                     <AnimationUtility word={ogSpread} initialXY={initialXY} />
                   </p>
                   <AnimationUtility word={usingSpread} initialXY={initialXY} />
                 </Typography>
                 <Typography
-                  style={{ fontSize: '25px', fontWeight: "900" }}
+                  style={{ fontSize: '25px', fontWeight: '900' }}
                   spacing={0}
                 >
-                  <AnimationUtility word={newSpread} initialXY={initialXY} wordWise={true} />
+                  <AnimationUtility
+                    word={newSpread}
+                    initialXY={initialXY}
+                    wordWise={true}
+                  />
                 </Typography>
               </Stack>
             </Grid>
             <Grid item xs={12} md={5} style={{}}>
-              {/* <Item>xs=4</Item> */}
-
-          {/* <HorizontalScroll /> */}
-          {/* </Grid> */}
-          {/* </Grid> */}
-          {/* <BackgrounVideoPlayer /> */}
+              <Item>xs=4</Item>
+            </Grid>
+          </Grid>
+          <BackgrounVideoPlayer />
         </div>
       </NoSsr>
-    </div>)
+      <HorizontalScroll />
+    </div>
   )
 }

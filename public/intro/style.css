@@ -24,7 +24,7 @@ body *:after {
 .intro {
   padding: 0 20px;
   width: 100%;
-  max-width: 440px;
+  /* max-width: 440px; */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -38,8 +38,8 @@ body *:after {
 }
 
 .intro-title {
-  font-family: "BenguiatITCW01-BoldCn";
-  color: #C11B1F;
+  font-family: 'Press Start 2P', cursive;
+  color: #dfac47;
   font-size: 34px;
   margin-bottom: 15px;
 }
@@ -71,12 +71,12 @@ body *:after {
   font-size: 16px;
   border-radius: 4px;
   font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
-  background: #C11B1F;
+  background: #dfac47;
   color: #FFF;
 }
 
 .intro-text-button:hover {
-  background: #941518;
+  background: #dfac47;
 }
 
 .intro-text-play {
@@ -100,7 +100,7 @@ body *:after {
 .intro-text-play:focus,
 .intro-text-play:active {
   opacity: 1;
-  color: #C11B1F;
+  color: #dfac47;
   outline: 0;
 }
 
@@ -131,9 +131,9 @@ body *:after {
   letter-spacing: -1.3vmin;
   font-weight: bold;
   display: none;
-  -webkit-text-stroke-color: #C11B1F;
+  -webkit-text-stroke-color: #dfac47;
   -webkit-text-stroke-width: 0.4vmin;
-  text-shadow: 0 0 2vmin rgba(193, 27, 31, 0.5);
+  text-shadow: 0 0 2vmin rgba(193, 185, 27, 0.5);
 }
 
 @media screen and (max-aspect-ratio: 16/9) {
@@ -149,7 +149,7 @@ body *:after {
 }
 
 .no-textstroke .title {
-  text-shadow: 3px 0 2vmin #C11B1F, -3px 0 2vmin #C11B1F, 0 -3px 2vmin #C11B1F, 0 3px 2vmin #C11B1F;
+  text-shadow: 3px 0 2vmin #dfac47, -3px 0 2vmin #dfac47, 0 -3px 2vmin #dfac47, 0 3px 2vmin #dfac47;
 }
 
 .title--show {
@@ -193,11 +193,11 @@ body *:after {
 .titlebar {
   position: absolute;
   border-style: solid;
-  border-color: #C11B1F;
+  border-color: #dfac47;
   height: 1vmin;
   border-width: 0.4vmin;
   border-radius: 0.1vmin;
-  box-shadow: 0 0 1.2vmin rgba(193, 27, 31, 0.8), 0 0 0.5vmin rgba(193, 27, 31, 0.8) inset;
+  box-shadow: 0 0 1.2vmin rgba(193, 179, 27, 0.8), 0 0 0.5vmin rgba(193, 179, 27, 0.8) inset;
 }
 
 @media screen and (max-aspect-ratio: 16/9) {
@@ -365,7 +365,7 @@ body *:after {
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  width: 90%;
+  width: 100%;
   opacity: 0;
   transition: opacity 300ms ease;
 }
@@ -684,7 +684,7 @@ body *:after {
     }
   }
   .textstroke .title--scene1 .title-word-letter[data-letter=A] {
-    text-shadow: 0 0 120vmin rgba(193, 27, 31, 0.5);
+    text-shadow: 0 0 120vmin rgba(193, 185, 27, 0.5);
     -webkit-text-stroke-width: 24vmin;
   }
   @media screen and (max-aspect-ratio: 16/9) {
@@ -745,7 +745,7 @@ body *:after {
     }
   }
   .textstroke .title--scene2 .title-word-letter[data-letter=N] {
-    text-shadow: 0 0 40vmin rgba(193, 27, 31, 0.5);
+    text-shadow: 0 0 40vmin rgba(193, 185, 27, 0.5);
     -webkit-text-stroke-width: 8vmin;
   }
   @media screen and (max-aspect-ratio: 16/9) {
@@ -806,7 +806,7 @@ body *:after {
     }
   }
   .textstroke .title--scene3 .title-word-letter[data-letter=R] {
-    text-shadow: 0 0 46vmin rgba(193, 27, 31, 0.5);
+    text-shadow: 0 0 46vmin rgba(193, 185, 27, 0.5);
     -webkit-text-stroke-width: 9.2vmin;
   }
   @media screen and (max-aspect-ratio: 16/9) {
@@ -834,7 +834,7 @@ body *:after {
     }
   }
   .textstroke .title--scene3 .title-word-letter[data-letter=I] {
-    text-shadow: 0 0 46vmin rgba(193, 27, 31, 0.5);
+    text-shadow: 0 0 46vmin rgba(193, 185, 27, 0.5);
     -webkit-text-stroke-width: 9.2vmin;
   }
   @media screen and (max-aspect-ratio: 16/9) {
@@ -914,7 +914,7 @@ body *:after {
     }
   }
   .textstroke .title--scene4 .title-word-letter[data-letter=S] {
-    text-shadow: 0 0 36vmin rgba(193, 27, 31, 0.5);
+    text-shadow: 0 0 36vmin rgba(169, 162, 27, 0.5);
     -webkit-text-stroke-width: 7.2vmin;
   }
   @media screen and (max-aspect-ratio: 16/9) {
@@ -942,7 +942,7 @@ body *:after {
     }
   }
   .textstroke .title--scene4 .title-word-letter[data-letter=G] {
-    text-shadow: 0 0 36vmin rgba(193, 27, 31, 0.5);
+    text-shadow: 0 0 36vmin rgba(193, 185, 27, 0.5);
     -webkit-text-stroke-width: 7.2vmin;
   }
   @media screen and (max-aspect-ratio: 16/9) {
@@ -1002,7 +1002,7 @@ body *:after {
     }
   }
   .textstroke .title--scene5 .title-word-letter[data-letter=R] {
-    text-shadow: 0 0 28vmin rgba(193, 27, 31, 0.5);
+    text-shadow: 0 0 28vmin rgba(193, 185, 27, 0.5);
     -webkit-text-stroke-width: 5.6vmin;
   }
   @media screen and (max-aspect-ratio: 16/9) {
@@ -1030,7 +1030,7 @@ body *:after {
     }
   }
   .textstroke .title--scene5 .title-word-letter[data-letter=S] {
-    text-shadow: 0 0 28vmin rgba(193, 27, 31, 0.5);
+    text-shadow: 0 0 28vmin rgba(193, 185, 27, 0.5);
     -webkit-text-stroke-width: 5.6vmin;
   }
   @media screen and (max-aspect-ratio: 16/9) {
@@ -1186,7 +1186,7 @@ body *:after {
     }
   }
   .textstroke .title--scene6 .title-word-letter[data-letter=I] {
-    text-shadow: 0 0 16vmin rgba(193, 27, 31, 0.5);
+    text-shadow: 0 0 16vmin rgba(193, 185, 27, 0.5);
     -webkit-text-stroke-width: 3.2vmin;
   }
   @media screen and (max-aspect-ratio: 16/9) {
@@ -1214,7 +1214,7 @@ body *:after {
     }
   }
   .textstroke .title--scene6 .title-word-letter[data-letter=A] {
-    text-shadow: 0 0 16vmin rgba(193, 27, 31, 0.5);
+    text-shadow: 0 0 16vmin rgba(193, 185, 27, 0.5);
     -webkit-text-stroke-width: 3.2vmin;
   }
   @media screen and (max-aspect-ratio: 16/9) {
@@ -1242,7 +1242,7 @@ body *:after {
     }
   }
   .textstroke .title--scene6 .title-word-letter[data-letter=T] {
-    text-shadow: 0 0 16vmin rgba(193, 27, 31, 0.5);
+    text-shadow: 0 0 16vmin rgba(193, 185, 27, 0.5);
     -webkit-text-stroke-width: 3.2vmin;
   }
   @media screen and (max-aspect-ratio: 16/9) {
@@ -1270,7 +1270,7 @@ body *:after {
     }
   }
   .textstroke .title--scene6 .title-word-letter[data-letter=H] {
-    text-shadow: 0 0 16vmin rgba(193, 27, 31, 0.5);
+    text-shadow: 0 0 16vmin rgba(193, 185, 27, 0.5);
     -webkit-text-stroke-width: 3.2vmin;
   }
   @media screen and (max-aspect-ratio: 16/9) {
@@ -1298,7 +1298,7 @@ body *:after {
     }
   }
   .textstroke .title--scene6 .title-word-letter[data-letter=N] {
-    text-shadow: 0 0 6vmin rgba(193, 27, 31, 0.5);
+    text-shadow: 0 0 6vmin rgba(193, 185, 27, 0.5);
     -webkit-text-stroke-width: 1.2vmin;
   }
   @media screen and (max-aspect-ratio: 16/9) {
@@ -1326,7 +1326,7 @@ body *:after {
     }
   }
   .textstroke .title--scene6 .title-word-letter[data-letter=G] {
-    text-shadow: 0 0 6vmin rgba(193, 27, 31, 0.5);
+    text-shadow: 0 0 6vmin rgba(193, 185, 27, 0.5);
     -webkit-text-stroke-width: 1.2vmin;
   }
   @media screen and (max-aspect-ratio: 16/9) {
@@ -1636,7 +1636,7 @@ body *:after {
     }
   }
   .textstroke .title--full .title-word-letter[data-letter] {
-    text-shadow: 0 0 20vmin rgba(193, 27, 31, 0.5);
+    text-shadow: 0 0 20vmin rgba(193, 185, 27, 0.5);
     -webkit-text-stroke-width: 4vmin;
   }
   @media screen and (max-aspect-ratio: 16/9) {
@@ -1719,7 +1719,7 @@ body *:after {
     height: 10vmin;
     border-width: 4vmin;
     border-radius: 1vmin;
-    box-shadow: 0 0 12vmin rgba(193, 27, 31, 0.8), 0 0 5vmin rgba(193, 27, 31, 0.8) inset;
+    box-shadow: 0 0 12vmin rgba(193, 179, 27, 0.8), 0 0 5vmin rgba(193, 179, 27, 0.8) inset;
   }
   @media screen and (max-aspect-ratio: 16/9) {
     .title--full .titlebar {
