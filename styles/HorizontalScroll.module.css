@@ -1,6 +1,6 @@
 #container {
     display: flex;
-    overflow-x: scroll;
+    overflow-x: hidden;
     
     max-width: 100rem;
     /* margin: 0 auto; */

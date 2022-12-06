@@ -27,7 +27,7 @@ let string = 'AETERNUM REIS'
 let belowString =
   'REDFINING AUTOMOBILE AND TRANSPORTATION TECHNOLOGY IN THE LIGHT OF ACCRESCENT EXIGENCIES'
 let usingSpread = string.split('')
-let newSpread = belowString.split('')
+let newSpread = belowString.split(/\s+/)
 let ogSpread = wiss.split('')
 export default function Home() {
   const [loading, setLoading] = useState(false)
@@ -42,7 +42,7 @@ export default function Home() {
       <NoSsr>
         <Example />
         <Box>
-          <Grid container justifyContent="center" alignItems="center">
+          <Grid container justifyContent="center" alignItems="center" style={{padding:"30px"}}>
             <Grid item xs={12} md={7} style={{ marginTop: '-100px' }}>
               <Stack spacing={4}>
                 <p style={{ fontSize: '5vh' }}>
@@ -54,7 +54,7 @@ export default function Home() {
                 <Typography
                   style={{ fontSize: '4.9vmin', wordWrap: 'break-word' }}
                 >
-                  <AnimationUtility word={newSpread} initialXY={initialXY} />
+                  <AnimationUtility word={newSpread} initialXY={initialXY} wordWise={true} />
                 </Typography>
               </Stack>
             </Grid>
