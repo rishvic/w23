@@ -34,14 +34,14 @@ export default function Home() {
     setLoading(true)
     setTimeout(() => {
       setLoading(false)
-    }, 6000)
+    }, 1000)
   }, [])
-  return false ? (
+  return loading ? (
     <Loader />
   ) : (
-    <div style={{ overflow:"auto" }}>
+    <div style={{ height: "100vh", paddingBottom: "100px", backgroundColor: "pink", overflowY: "scroll" }}>
       <NoSsr>
-        <div>
+        <div style={{ paddingBottom: "100px" }}>
           <Example />
           <Grid
             container
@@ -80,8 +80,8 @@ export default function Home() {
           </Grid>
           <BackgrounVideoPlayer />
         </div>
-      </NoSsr>
+      </NoSsr >
       <HorizontalScroll />
-    </div>
+    </div >
   )
 }

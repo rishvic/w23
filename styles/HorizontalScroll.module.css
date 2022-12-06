@@ -1,22 +1,18 @@
 #container {
-    display: flex;
-    overflow-x: hidden;
-    
-    max-width: 100rem;
-    /* margin: 0px -10px; */
-  }
-  
-  #container p {
-    font-family: sans-serif;
-    
-    border-radius: 8px;
-    background: #ff6961;
-    color: white;
-    min-width: 100%;
-    min-height: 100%;
-    
-    padding: 2rem 3rem;
-    margin: 2rem 1rem;
-  }
-  
-  
+  display: flex;
+  overflow-x: hidden;
+  margin-top: -40px;
+}
+
+#container p {
+  font-family: sans-serif;
+
+  border-radius: 8px;
+  background: #ff6961;
+  color: white;
+  min-width: 100%;
+  min-height: 100%;
+
+  padding: 2rem 3rem;
+  margin: 2rem 1rem;
+}
