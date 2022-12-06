@@ -108,6 +108,7 @@ function startAnimation() {
 
     // Set up scenes to show after each interval
     let offset = 0;
+    let cds=0;
     for (let i = 0; i < scenes.length; i++) {
         setTimeout(() => {
             if (scenes[i - 1]) {
