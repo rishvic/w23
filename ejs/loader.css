@@ -1,0 +1,74 @@
+.pointer-events-none { pointer-events: none; }
+
+.wrapper {
+  position: fixed;
+  font-family: 'Press Start 2P';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #70c3e9;
+  z-index: 1000;
+}
+
+@media screen and (max-height: 320px) {
+  .wrapper {
+    margin-top: -40px;
+  }
+}
+
+.flex_wrapper {
+  width: 100%;
+  padding-left: calc(20% + 100px);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  opacity: 0;
+}
+
+.plane_wrapper {
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+
+.sprite_container {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+}
+
+.sprite {
+  position: absolute;
+  height: 60px;
+  width: 120px;
+  transform-origin: center bottom;
+}
+
+.rope {
+  margin: 0 -2px 0 -22px;
+  height: 60px;
+  width: 60px;
+  z-index: -1;
+  transform-origin: center left;
+  transition: 0.4s;
+}
+
+.message_ghost,
+.message {
+  height: 30px;
+  line-height: 30px;
+  background-color: white;
+  color: navy;
+  padding: 0px 8px;
+}
+
+.module {
+  position: relative;
+  transition: 0.7s ease-in-out;
+}
+
+.front { display: flex; }

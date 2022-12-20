@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="assets/competition/css/main.css" />
+    <title>Wissenaire'23 | Competitions</title>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.2.min.js"
+      integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA="
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Oswald"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,500,800"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        font-family: "Montserrat", sans-serif;
+      }
+
+      .btn-grp {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .btn-item {
+        margin-right: 35px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Slider Wrapper -->
+    <div class="css-slider-wrapper" id="ss">
+      <input
+        type="radio"
+        name="slider"
+        class="slide-radio1"
+        checked
+        id="slider_1"
+      />
+      <input type="radio" name="slider" class="slide-radio2" id="slider_2" />
+      <input type="radio" name="slider" class="slide-radio3" id="slider_3" />
+      <input type="radio" name="slider" class="slide-radio4" id="slider_4" />
+      <input type="radio" name="slider" class="slide-radio5" id="slider_5" />
+      <input type="radio" name="slider" class="slide-radio6" id="slider_6" />
+      <input type="radio" name="slider" class="slide-radio7" id="slider_7" />
+      <input type="radio" name="slider" class="slide-radio8" id="slider_8" />
+      <input type="radio" name="slider" class="slide-radio9" id="slider_9" />
+      <input type="radio" name="slider" class="slide-radio10" id="slider_10" />
+      <input type="radio" name="slider" class="slide-radio11" id="slider_11" />
+      <input type="radio" name="slider" class="slide-radio12" id="slider_12" />
+      <input type="radio" name="slider" class="slide-radio13" id="slider_13" />
+      <input type="radio" name="slider" class="slide-radio14" id="slider_14" />
+      <input type="radio" name="slider" class="slide-radio15" id="slider_15" />
+      <input type="radio" name="slider" class="slide-radio16" id="slider_16" />
+      <input type="radio" name="slider" class="slide-radio17" id="slider_17" />
+
+      <!-- Slider Pagination -->
+      <div class="slider-pagination">
+        <label for="slider_1" class="page1"></label>
+        <label for="slider_2" class="page2"></label>
+        <label for="slider_3" class="page3"></label>
+        <label for="slider_4" class="page4"></label>
+        <label for="slider_5" class="page5"></label>
+        <label for="slider_6" class="page6"></label>
+        <label for="slider_7" class="page7"></label>
+        <label for="slider_8" class="page8"></label>
+        <label for="slider_9" class="page9"></label>
+        <label for="slider_10" class="page10"></label>
+        <label for="slider_11" class="page11"></label>
+        <label for="slider_12" class="page12"></label>
+        <label for="slider_13" class="page13"></label>
+        <label for="slider_14" class="page14"></label>
+        <label for="slider_15" class="page15"></label>
+        <label for="slider_16" class="page16"></label>
+        <label for="slider_17" class="page17"></label>
+      </div>
+
+      <!-- Slider #1 -->
+      <div class="slider slide-1" id="s1">
+        <img src="assets/competition/img/school champ.png" alt="" />
+        <div class="slider-content" style="margin: 2%">
+          <h2>SCHOOL CHAMP</h2>
+          <h4>
+            It is an event for school children of 8-10 class which includes
+            written exam, memory test and an interview.
+          </h4>
+          <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
+          <div class="btn-grp">
+            <div class="btn-item">
+              <button class="button">
+                REGISTER
+                <div class="button__horizontal"></div>
+                <div class="button__vertical"></div>
+              </button>
+            </div>
+            <!-- <div class="btn-item">
+              <button class="button">
+                KNOW MORE
+                <div class="button__horizontal"></div>
+                <div class="button__vertical"></div>
+              </button>
+            </div> -->
+          </div>
+        </div>
+        <div class="number-pagination">
+          <span>1</span>
+        </div>
+      </div>
+
+      <!-- Slider #2 -->
+      <div class="slider slide-2" id="s2">
+        <img src="assets/competition/img/truss the frame.png" alt="" />
+        <div class="slider-content">
+          <h2>TRUSS THE FRAME</h2>
+          <h4>
+            Building a truss which is less than 200g by following the given
+            instructions using given materials(100 ice cream sticks, fevicol) in
+            given amount of time (eg. 2 days)
+          </h4>
+          <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
+          <div class="btn-grp">
+            <div class="btn-item">
+              <button class="button">
+                REGISTER
+                <div class="button__horizontal"></div>
+                <div class="button__vertical"></div>
+              </button>
+            </div>
+            <!-- <div class="btn-item">
+              <button class="button">
+                KNOW MORE
+                <div class="button__horizontal"></div>
+                <div class="button__vertical"></div>
+              </button>
+            </div> -->
+          </div>
+        </div>
+        <div class="number-pagination">
+          <span>2</span>
+        </div>
+      </div>
+
+      <!-- Slider #3 -->
+      <div class="slider slide-3" id="s3">
+        <img src="assets/competition/img/shutter.png" alt="" />
+        <div class="slider-content">
+          <h2>SHUTTER</h2>
+          <h4>
+            This is an event in which participants should submit photographs
+            taken by them based on the theme.
+          </h4>
+          <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
+          <div class="btn-grp">
+            <div class="btn-item">
+              <button class="button">
+                REGISTER
+                <div class="button__horizontal"></div>
+                <div class="button__vertical"></div>
+              </button>
+            </div>
+            <!-- <div class="btn-item">
+              <button class="button">
+                KNOW MORE
+                <div class="button__horizontal"></div>
+                <div class="button__vertical"></div>
+              </button>
+            </div> -->
+          </div>
+        </div>
+        <div class="number-pagination">
+          <span>3</span>
+        </div>
+      </div>
+
+      <!-- Slider #4 -->
+      <div class="slider slide-4" id="s4">
+        <!-- <img src="assets/competition/img/" alt="" /> -->
+        <div class="slider-content">
+          <h2>SCIENCE TOONS</h2>
+          <h4>
+            This is an event where the participants should create cartoons or
+            memes such that they also convey some scientific information with
+            the help of memes/cartoons.
+          </h4>
+          <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
+          <div class="btn-grp">
+            <div class="btn-item">
+              <button class="button">
+                REGISTER
+                <div class="button__horizontal"></div>
+                <div class="button__vertical"></div>
+              </button>
+            </div>
+            <!-- <div class="btn-item">
+              <button class="button">
+                KNOW MORE
+                <div class="button__horizontal"></div>
+                <div class="button__vertical"></div>
+              </button>
+            </div> -->
+          </div>
+        </div>
+        <div class="number-pagination">
+          <span>4</span>
+        </div>
+      </div>
+
+      <!-- Slider #5 -->
+      <div class="slider slide-5" id="s5">
+        <img src="./assets/competition/img/maths olympiad.png" alt="" />
+        <div class="slider-content">
+          <h2>MATHS OLYMPIAD</h2>
+          <h4>
+            It is a competition where an individual can explore the eternal
+            beauty of mathematics. It consist of 2 Rounds Where students are
+            awarded on the basis of their ability of mathematical application,
+            aptitude, and logical reasoning skills.
+          </h4>
+          <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
+          <div class="btn-grp">
+            <div class="btn-item">
+              <button class="button">
+                REGISTER
+                <div class="button__horizontal"></div>
+                <div class="button__vertical"></div>
+              </button>
+            </div>
+            <!-- <div class="btn-item">
+              <button class="button">
+                KNOW MORE
+                <div class="button__horizontal"></div>
+                <div class="button__vertical"></div>
+              </button>
+            </div> -->
+          </div>
+        </div>
+        <div class="number-pagination">
+          <span>5</span>
+        </div>
+      </div>
+
+      <!-- Slider #6 -->
+      <div class="slider slide-6" id="s6">
+        <!-- <img src="assets/competition/img/" alt="" /> -->
+        <div class="slider-content">
+          <h2>ARCHIMEDES DUNK</h2>
+          <h4>
+            Any structure made of cement ( of different compositions) should be
+            within 1 square feet in top view and able to float on water, will be
+            examined during fest.
+          </h4>
+          <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
+          <div class="btn-grp">
+            <div class="btn-item">
+              <button class="button">
+                REGISTER
+                <div class="button__horizontal"></div>
+                <div class="button__vertical"></div>
+              </button>
+            </div>
+            <!-- <div class="btn-item">
+              <button class="button">
+                KNOW MORE
+                <div class="button__horizontal"></div>
+                <div class="button__vertical"></div>
+              </button>
+            </div> -->
+          </div>
+        </div>
+        <div class="number-pagination">
+          <span>6</span>
+        </div>
+      </div>
+
+      <!-- Slider #7 -->
+      <div class="slider slide-7" id="s7">
+        <img src="assets/competition/img/quizzare.png" alt="" />
+        <div class="slider-content">
+          <h2>QUIZZARE</h2>
+          <h4>
+            It is conducted in two rounds. They can participate individually or
+            in teams of 2.
+          </h4>
+          <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
+          <div class="btn-grp">
+            <div class="btn-item">
+              <button class="button">
+                REGISTER
+                <div class="button__horizontal"></div>
+                <div class="button__vertical"></div>
+              </button>
+            </div>
+            <!-- <div class="btn-item">
+              <button class="button">
+                KNOW MORE
+                <div class="button__horizontal"></div>
+                <div class="button__vertical"></div>
+              </button>
+            </div> -->
+          </div>
+        </div>
+        <div class="number-pagination">
+          <span>7</span>
+        </div>
+      </div>
+
+      <!-- Slider #8 -->
+      <div class="slider slide-8" id="s8">
+        <img src="assets/competition/img/mechanical colloquia.png" alt="" />
+        <div class="slider-content">
+          <h2>MECHANICAL COLLOQUIA</h2>
+          <h4>
+            Participants need to make a PowerPoint Presentation manifesting
+            their innovative ideas based on topic of interest from the list of
+            domains.
+          </h4>
+          <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
+          <div class="btn-grp">
+            <div class="btn-item">
+              <button class="button">
+                REGISTER
+                <div class="button__horizontal"></div>
+                <div class="button__vertical"></div>
+              </button>
+            </div>
+            <!-- <div class="btn-item">
+              <button class="button">
+                KNOW MORE
+                <div class="button__horizontal"></div>
+                <div class="button__vertical"></div>
+              </button>
+            </div> -->
+          </div>
+        </div>
+        <div class="number-pagination">
+          <span>8</span>
+        </div>
+      </div>
+
+      <!-- Slider #9 -->
+      <div class="slider slide-9" id="s9">
+        <img src="assets/competition/img/memory challenge.png" alt="" />
+        <div class="slider-content">
+          <h2>MEMORY CHALLENGE</h2>
+          <h4>
+            Sequence of pics(eg: shape of polygon, number, place, object) will
+            be displayed and participants are asked to number them in order at
+            the end, based on the ability of remembering winners will be decided
+          </h4>
+          <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
+          <div class="btn-grp">
+            <div class="btn-item">
+              <button class="button">
+                REGISTER
+                <div class="button__horizontal"></div>
+                <div class="button__vertical"></div>
+              </button>
+            </div>
+            <!-- <div class="btn-item">
+              <button class="button">
+                KNOW MORE
+                <div class="button__horizontal"></div>
+                <div class="button__vertical"></div>
+              </button>
+            </div> -->
+          </div>
+        </div>
+        <div class="number-pagination">
+          <span>9</span>
+        </div>
+      </div>
+
+      <!-- Slider #10 -->
+      <div class="slider slide-10" id="s10">
+        <img src="assets/competition/img/Blind coding.png" alt="" />
+        <div class="slider-content">
+          <h2>BLIND CODE</h2>
+          <h4>
+            It will be a coding competition in which participants will have to
+            solve a coding challenge but they will not be able to see the
+            computer screen. Hence it will also judge their typing skills
+          </h4>
+          <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
+          <div class="btn-grp">
+            <div class="btn-item">
+              <button class="button">
+                REGISTER
+                <div class="button__horizontal"></div>
+                <div class="button__vertical"></div>
+              </button>
+            </div>
+            <!-- <div class="btn-item">
+              <button class="button">
+                KNOW MORE
+                <div class="button__horizontal"></div>
+                <div class="button__vertical"></div>
+              </button>
+            </div> -->
+          </div>
+        </div>
+        <div class="number-pagination">
+          <span>10</span>
+        </div>
+      </div>
+
+      <!-- Slider #11 -->
+      <div class="slider slide-11" id="s11">
+        <img src="assets/competition/img/computer cypher.png" alt="" />
+        <div class="slider-content">
+          <h2>COUNTER CYPHER</h2>
+          <h4>
+            It will be a coding competition. Participants will be given inputs
+            and corresponding outputs and they need to come up with a working
+            code which can produce the correct outputs.
+          </h4>
+          <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
+          <div class="btn-grp">
+            <div class="btn-item">
+              <button class="button">
+                REGISTER
+                <div class="button__horizontal"></div>
+                <div class="button__vertical"></div>
+              </button>
+            </div>
+            <!-- <div class="btn-item">
+              <button class="button">
+                KNOW MORE
+                <div class="button__horizontal"></div>
+                <div class="button__vertical"></div>
+              </button>
+            </div> -->
+          </div>
+        </div>
+        <div class="number-pagination">
+          <span>11</span>
+        </div>
+      </div>
+
+      <!-- Slider #12 -->
+      <div class="slider slide-12" id="s12">
+        <img src="assets/competition/img/electrical colloqui.png" alt="" />
+        <div class="slider-content">
+          <h2>COLLOQUIA ELECTRICAL</h2>
+          <h4>
+            So here we present you an opportunity to manifest your ideas..
+            colloquia, the powerpoint presentation event of Wissenaire'23 .It
+            consists of 2 rounds .In 1st round participants(Team) need to
+            present a ppt for 12min and followed by 3min queries on the domains
+            given.After this 2nd round will be held to well performed teams
+          </h4>
+          <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
+          <div class="btn-grp">
+            <div class="btn-item">
+              <button class="button">
+                REGISTER
+                <div class="button__horizontal"></div>
+                <div class="button__vertical"></div>
+              </button>
+            </div>
+            <!-- <div class="btn-item">
+              <button class="button">
+                KNOW MORE
+                <div class="button__horizontal"></div>
+                <div class="button__vertical"></div>
+              </button>
+            </div> -->
+          </div>
+        </div>
+        <div class="number-pagination">
+          <span>12</span>
+        </div>
+      </div>
+
+      <!-- Slider #13 -->
+      <div class="slider slide-13" id="s13">
+        <img src="assets/competition/img/civil colloquia.png" alt="" />
+        <div class="slider-content">
+          <h2>COLLOQUIA CIVIL</h2>
+          <h4>
+            It is an event of 2 rounds in which participants have to prepare
+            powerpoint presentation on based on topic of interest from given
+            list of domains (civil topics) and present it for 12min followed by
+            3min of queries.
+          </h4>
+          <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
+          <div class="btn-grp">
+            <div class="btn-item">
+              <button class="button">
+                REGISTER
+                <div class="button__horizontal"></div>
+                <div class="button__vertical"></div>
+              </button>
+            </div>
+            <!-- <div class="btn-item">
+              <button class="button">
+                KNOW MORE
+                <div class="button__horizontal"></div>
+                <div class="button__vertical"></div>
+              </button>
+            </div> -->
+          </div>
+        </div>
+        <div class="number-pagination">
+          <span>13</span>
+        </div>
+      </div>
+
+      <!-- Slider #14 -->
+      <div class="slider slide-14" id="s14">
+        <!-- <img src="assets/competition/img/" alt="" /> -->
+        <div class="slider-content">
+          <h2>AUCTION WARS</h2>
+          <h4>
+            It is a competition for teams. Round 1 consists of basic questions
+            on theme of the auction answering which the Teams qualify for round
+            2. Round 2 is a bidding war between the teams based on the theme of
+            auction.
+          </h4>
+          <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
+          <div class="btn-grp">
+            <div class="btn-item">
+              <button class="button">
+                REGISTER
+                <div class="button__horizontal"></div>
+                <div class="button__vertical"></div>
+              </button>
+            </div>
+            <!-- <div class="btn-item">
+              <button class="button">
+                KNOW MORE
+                <div class="button__horizontal"></div>
+                <div class="button__vertical"></div>
+              </button>
+            </div> -->
+          </div>
+        </div>
+        <div class="number-pagination">
+          <span>14</span>
+        </div>
+      </div>
+
+      <!-- Slider #15 -->
+      <div class="slider slide-15" id="s15">
+        <img src="assets/competition/img/data-analysis-icon-flat-design-vector-6357928.png" alt="" />
+        <div class="slider-content">
+          <h2>ANALYSIS ACES</h2>
+          <h4>
+            it is a competition where participants in teams will be handed out
+            data in some fields which have to analysed by them and come up with
+            the conclusion or solution. It is competition stressing on data
+            science and finance.
+          </h4>
+          <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
+          <div class="btn-grp">
+            <div class="btn-item">
+              <button class="button">
+                REGISTER
+                <div class="button__horizontal"></div>
+                <div class="button__vertical"></div>
+              </button>
+            </div>
+            <!-- <div class="btn-item">
+              <button class="button">
+                KNOW MORE
+                <div class="button__horizontal"></div>
+                <div class="button__vertical"></div>
+              </button>
+            </div> -->
+          </div>
+        </div>
+        <div class="number-pagination">
+          <span>15</span>
+        </div>
+      </div>
+
+      <!-- Slider #16 -->
+      <div class="slider slide-16" id="s16">
+        <img src="assets/competition/img/call of duty.png" alt="" />
+        <div class="slider-content">
+          <h2>CALL OF DUTY</h2>
+          <h4>
+            This is an event where the participants should create cartoons or
+            memes such that they also convey some scientific information with
+            the help of memes/cartoons.
+          </h4>
+          <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
+          <div class="btn-grp">
+            <div class="btn-item">
+              <button class="button">
+                REGISTER
+                <div class="button__horizontal"></div>
+                <div class="button__vertical"></div>
+              </button>
+            </div>
+            <div class="btn-item">
+              <button class="button">
+                KNOW MORE
+                <div class="button__horizontal"></div>
+                <div class="button__vertical"></div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="number-pagination">
+          <span>16</span>
+        </div>
+      </div>
+
+      <!-- Slider #17 -->
+      <div class="slider slide-17" id="s17">
+        <img src="assets/competition/img/csgowallpaper4.png" alt="" />
+        <div class="slider-content">
+          <h2>COUNTER-STRIKE</h2>
+          <h4>
+            Global Offensive (CS:GO) is a multiplayer tactical first-person
+            shooter game. Two opposing teams, the Terrorists and the
+            Counter-Terrorists, compete in game modes to repeatedly complete
+            objectives.
+          </h4>
+          <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
+          <div class="btn-grp">
+            <div class="btn-item">
+              <button class="button">
+                REGISTER
+                <div class="button__horizontal"></div>
+                <div class="button__vertical"></div>
+              </button>
+            </div>
+            <!-- <div class="btn-item">
+              <button class="button">
+                KNOW MORE
+                <div class="button__horizontal"></div>
+                <div class="button__vertical"></div>
+              </button>
+            </div> -->
+          </div>
+        </div>
+        <div class="number-pagination">
+          <span>17</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/competition/js/scrolling.js"></script>
+    <script src="assets/competition/js/touchScroll/ts1.js"></script>
+    <script src="assets/competition/js/touchScroll/ts2.js"></script>
+    <script src="assets/competition/js/touchScroll/ts3.js"></script>
+    <script src="assets/competition/js/touchScroll/ts4.js"></script>
+    <script src="assets/competition/js/touchScroll/ts5.js"></script>
+    <script src="assets/competition/js/touchScroll/ts6.js"></script>
+    <script src="assets/competition/js/touchScroll/ts7.js"></script>
+    <script src="assets/competition/js/touchScroll/ts8.js"></script>
+    <script src="assets/competition/js/touchScroll/ts9.js"></script>
+    <script src="assets/competition/js/touchScroll/ts10.js"></script>
+    <script src="assets/competition/js/touchScroll/ts11.js"></script>
+    <script src="assets/competition/js/touchScroll/ts12.js"></script>
+    <script src="assets/competition/js/touchScroll/ts13.js"></script>
+    <script src="assets/competition/js/touchScroll/ts14.js"></script>
+    <script src="assets/competition/js/touchScroll/ts15.js"></script>
+    <script src="assets/competition/js/touchScroll/ts16.js"></script>
+    <script src="assets/competition/js/touchScroll/ts17.js"></script>
+  </body>
+</html>
