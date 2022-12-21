@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wissenaire '23 | Home</title>
+    <link rel="stylesheet" href="assets/landing/stylesheets/style.css" />
+    <link href="assets/landing/stylesheets/brolink.css" rel="stylesheet" />
+    <link href="assets/landing/stylesheets/index.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/landing/stylesheets/about.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      async="async"
+      src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"
+    ></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.147.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.147.0/examples/jsm/"
+        }
+      }
+    </script>
+    <%- include('./partials/navBar.ejs') %>
+    <script type="module">
+      import "assets/landing/javascripts/globe.mjs";
+    </script>
+    <video
+      id="bg-video"
+      autoplay="autoplay"
+      muted="muted"
+      loop="loop"
+      poster="assets/landing/images/bg-poster.jpg"
+    >
+      <source
+        src="assets/landing/videos/purple-moving-bg.mp4"
+        type="video/mp4"
+      />
+    </video>
+    <main class="text-light container">
+      <section id="landing" class="row align-items-center">
+        <section id="tagline" class="col-md-8">
+          <div class="wrapper">
+            <span data-text="Aeternum"></span><span data-text="Reis"></span>
+          </div>
+        </section>
+        <section id="globe" class="col-md-4"></section>
+        <div>
+          <a href="/about"
+            ><button style="margin-right: 5vmin" class="btnKnow">
+              Click To Know More
+            </button></a
+          >
+          <%if(!participant) {%>
+          <a href="/auth/google"><button class="btnKnow">REGISTER</button></a>
+          <%} else {%>
+          <a href="/profile"><button class="btnKnow">Profile</button></a>
+          <%}%>
+        </div>
+      </section>
+    </main>
+    <script type="text/javascript">
+      const body = document.querySelector(".master");
+      const btnKnow = body.querySelector(".btnKnow");
+      const btnClose = body.querySelector(".btnClose");
+
+      function openBody() {
+        body.classList.add("open");
+      }
+
+      function closeBody() {
+        body.classList.remove("open");
+      }
+
+      btnKnow.addEventListener("click", openBody);
+
+      btnClose.addEventListener("click", closeBody);
+    </script>
+  </body>
+</html>

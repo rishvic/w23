@@ -1,0 +1,147 @@
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    text-align: center;
+    background-color: hsla(230, 40%, 50%, 1);
+}
+
+body:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0;
+    height: 100%;
+}
+
+h1 {
+    display: inline-block;
+    color: white;
+    font-family: 'Righteous', serif;
+    font-size: 15vw;
+    text-shadow: .03em .03em 0 hsla(230, 40%, 50%, 1);
+    margin-bottom: -900px;
+}
+
+h1:after {
+    content: attr(data-shadow);
+    position: absolute;
+    top: .06em;
+    left: .06em;
+    z-index: -1;
+    text-shadow: none;
+    background-image:
+        linear-gradient(45deg,
+            transparent 45%,
+            hsla(48, 20%, 90%, 1) 45%,
+            hsla(48, 20%, 90%, 1) 55%,
+            transparent 0);
+    background-size: .05em .05em;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: shad-anim 15s linear infinite;
+}
+
+@keyframes shad-anim {
+    0% {
+        background-position: 0 0
+    }
+
+    0% {
+        background-position: 100% -100%
+    }
+}
+
+
+
+
+
+p {
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    display: inline-block;
+    border: 4px double rgba(255, 255, 255, 0.25);
+    border-width: 4px 0;
+    padding: 1.5em 0em;
+}
+
+p span {
+    font: 700 "Oswald", sans-serif;
+    font-size: max(3vw, 20px);
+    letter-spacing: 0;
+    padding: 0.25em 0 0.325em;
+    display: block;
+    margin: 0 auto;
+    text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+    /* Clip Background Image */
+    background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* Animate Background Image */
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: aitf 80s linear infinite;
+    /* Activate hardware acceleration for smoother animations */
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+}
+
+/* Animate Background Image */
+@-webkit-keyframes aitf {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.video-card {
+    clear: both;
+    text-align: center;
+}
+
+.video-card-top {
+    border-radius: 10px;
+    border-top: 10px solid #f20e0e;
+    box-shadow: 16px 13px 42px -17px rgba(0, 0, 0, 0.69);
+    height: 350px;
+    width: 600px;
+}
+
+hr {
+    margin: 40px;
+    border: 2px dashed #C0C0C0;
+}
+
+.hm-gradient {
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+}
+
+.navbar .dropdown-menu a:hover {
+    color: #616161 !important;
+}
+
+.darken-grey-text {
+    color: #2E2E2E;
+}
+
+#NAVBAR {
+    position: fixed;
+    top: 0px;
+    background-color: inherit;
+}
