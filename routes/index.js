@@ -18,7 +18,8 @@ function ensureAuthenticated(req, res, next) {
 
 //frontend routes
 router.get("/", renderController.renderHome);
-router.get("/profile", ensureAuthenticated, renderController.renderProfile);
+// , ensureAuthenticated
+router.get("/profile", renderController.renderProfile);
 router.get("/about", renderController.renderAbout);
 router.get("/competitions", renderController.renderCompetitions);
 router.get("/workshops", renderController.renderWorkshops);

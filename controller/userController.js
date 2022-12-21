@@ -5,10 +5,11 @@ const catchAsync = require('./../utils/catchAsync');
 
 exports.updateProfile = catchAsync(async (req,res, next) => {
     const user = await User.findOne({email : req.user.emails[0].value});
+    console.log("From Profile",req.body);
     var wissid;
-    if (user.id < 10) wissid = 'W22R1000' + user.id;
-    else if (user.id < 100) wissid = 'W22R100' + user.id;
-    else if(user.id < 1000) wissid = 'W22R10' + user.id;
+    if (user.id < 10) wissid = 'W23R1000' + user.id;
+    else if (user.id < 100) wissid = 'W23R100' + user.id;
+    else if(user.id < 1000) wissid = 'W23R10' + user.id;
     else wissid = 'W22R1' + user.id;
 
     const updates = {

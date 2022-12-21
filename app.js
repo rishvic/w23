@@ -73,7 +73,7 @@ passport.use(new GoogleStrategy({
     const user = await User.findOne({email : profile.emails[0].value});
     if(!user) {
         console.log('no user in db');
-        console.log(profile);
+        // console.log(profile);
         const newId = await getIdValue();
         const userDetails = {
             googleid : profile.id,
@@ -84,7 +84,7 @@ passport.use(new GoogleStrategy({
             id : newId
         }
         const newUser = await User.create(userDetails);
-        console.log('created new user', newUser);
+        // console.log('created new user', newUser);
         return done(null, profile);
     } else {
         console.log('user already exists');
@@ -100,7 +100,7 @@ app.get('/auth/google', passport.authenticate('google', {prompt : 'consent', sco
 app.get('/auth/google/callback', passport.authenticate('google', { successRedirect: '/profile', failureRedirect: '/'}),
   function(req, res) {
     req.session.save(); 
-    console.log(req);
+    // console.log(req);
     res.redirect('/profile')   
   }
 );
