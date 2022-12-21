@@ -1,0 +1,34 @@
+<div class="buttonDiv">
+    <%if(!participant) {%>
+    <button
+      class="downloadBtn"
+      data-text="Sign Up / Login"
+      onclick="redirectToLogin()"
+    >
+      <span>Register...</span>
+    </button>
+    <%} else if(!participant.phoneNumber){%>
+    <button
+      class="downloadBtn"
+      data-text="Complete Profile"
+      onclick="redirectToProfile()"
+    >
+      <span>Register...</span>
+    </button>
+    <%} else {%>
+    <button
+      class="downloadBtn"
+      data-text="Payment"
+      onclick="continueToBooking()"
+    >
+      <span>Register...</span>
+    </button>
+    <%}%>
+    <button
+      class="downloadBtn"
+      id="download-pdf"
+      data-text="Download PDF"
+    >
+      <span>Download...</span>
+    </button>
+  </div>

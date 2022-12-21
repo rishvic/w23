@@ -79,14 +79,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="buttonDiv">
-                    <button class="downloadBtn" data-text="Payment">
-                        <span>Register...</span>
-                    </button>
-                    <button class="downloadBtn" id="download-pdf" data-text="Download PDF">
-                        <span>Download...</span>
-                    </button>
-                </div>
+                <%- include('../partials/workshopRegistration.ejs') %>
+
+                <script>
+                  function redirectToLogin() {
+                    window.location.href = "/auth/google";
+                  }
+                  function redirectToProfile() {
+                    window.location.href = "/profile";
+                  }
+                  function continueToBooking() {
+                    window.location.href = `https://payments.cashfree.com/forms/hacking`;
+                  }
+                </script>
             </div>
         </section>
 
