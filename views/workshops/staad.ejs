@@ -13,6 +13,13 @@
     <link href="assets/workshop/img/favicon.png" rel="icon">
     <link href="assets/workshop/img/apple-touch-icon.png" rel="apple-touch-icon">
 
+     <!-- ---------------------Preloader----------------------------- -->
+     <link rel="stylesheet" type="text/css" href="css/preloader.css" />
+     <script src="js/preloader.js" defer></script>
+
+     <link rel="stylesheet" type="text/css" href="css/cursor.css" />
+     <script src="js/cursor.js" defer></script>
+
     <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
@@ -34,7 +41,8 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.1.0/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body class="box custom-cursor">
+    <div id="cursor_follower"></div>
 
     <main id="main">
 
@@ -315,5 +323,12 @@
         <script src="assets/workshop/js/main.js"></script>
 
 </body>
+<%- include('../partials/preLoader') %>
+<script>
+  let preLoader = document.getElementById('preloader')
+  $(window).load(function(){
+    preLoader.style.display='none';
+  })
+</script>
 
 </html>
