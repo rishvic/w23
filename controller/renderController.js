@@ -82,7 +82,7 @@ exports.renderHighlights = async (req, res) => {
   if(req.user) {
     const user = await findUser(req.user.emails[0].value);
     if(NODE_ENV === 'development') {
-      res.render("highlights", {participant:user});
+      res.render("comingsoon", {participant:user});
     } else {
       res.render("comingsoon", {participant:user});
     }
