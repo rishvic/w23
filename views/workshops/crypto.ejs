@@ -66,6 +66,7 @@
   </head>
 
   <body class="box custom-cursor">
+    <%- include('../partials/navBar.ejs') %>
     <div id="cursor_follower"></div>
     <main id="main">
       <section id="about" class="about">
@@ -78,7 +79,7 @@
           <div class="row">
             <div class="col-lg-4" data-aos="fade-right">
               <img
-                src="./assets/workshop/img/ai-ml.jpg"
+                src="./assets/workshop/img/blockchain.jpg"
                 class="img-fluid"
                 alt=""
               />
@@ -86,7 +87,12 @@
             <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
               <h3>About</h3>
               <p class="fst-italic">
-                Blockchain Technology is malnly evolved from a perspective of decentralized financial system and promoting the cashless economy. The dlgltal ledger where the transactions made In Bitcoin or else another cryptoeurreney that are recorded publicly and chronologically. This technology has radically improved supply chain and other transactions network.
+                Blockchain Technology is malnly evolved from a perspective of
+                decentralized financial system and promoting the cashless
+                economy. The dlgltal ledger where the transactions made In
+                Bitcoin or else another cryptoeurreney that are recorded
+                publicly and chronologically. This technology has radically
+                improved supply chain and other transactions network.
               </p>
               <div class="row">
                 <div class="col-lg-6">
@@ -117,7 +123,8 @@
           <div class="section-title">
             <h2>What you will learn?</h2>
             <p>
-              You will learn detailed study of blockchain, bitcoin, Ethereum, and many more...
+              You will learn detailed study of blockchain, bitcoin, Ethereum,
+              and many more...
             </p>
           </div>
 
@@ -138,10 +145,19 @@
               </div>
             </div>
 
-            <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div
+              class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
               <div class="count-box">
                 <i class="bi bi-journal-richtext"></i>
-                <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>
+                <span
+                  data-purecounter-start="0"
+                  data-purecounter-end="3"
+                  data-purecounter-duration="1"
+                  class="purecounter"
+                ></span>
                 <p><strong>Projects</strong></p>
               </div>
             </div>
@@ -182,7 +198,38 @@
           </div>
         </div>
       </section>
+      <section id="portfolio" class="portfolio section-bg">
+        <div class="container">
+          <div class="section-title">
+            <h2>Perks and Benefits</h2>
+          </div>
 
+          <div
+            class="row portfolio-container"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="col-lg-6 col-md-6 portfolio-item filter-app">
+              <!-- <div
+                class="portfolio-wrap h-100 d-flex align-items-center justify-content-center"
+              > -->
+              <div class="resume-item">
+                <h5>1. Free Exhibit passes.</h5>
+              </div>
+              <div class="resume-item">
+                <h5>2. Certificate from IIT Bhubaneswar.</h5>
+              </div>
+              <div class="resume-item">
+                <h5>3. Discount on starnite passes.</h5>
+              </div>
+              <div class="resume-item">
+                <h5>4. Summer intership opportunities.</h5>
+              </div>
+              <!-- </div> -->
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="resume" class="resume">
         <div class="container">
           <div class="section-title">
@@ -209,9 +256,8 @@
                 <h4>5. Creating private blockchain with multichain</h4>
               </div>
               <div class="resume-item">
-                <h4>6. Activities & Projects </h4>
+                <h4>6. Activities & Projects</h4>
               </div>
-              
             </div>
             <p>
               For more information and complete syllabus, please download the
@@ -235,6 +281,7 @@
             <div class="col-lg-4 col-md-6 portfolio-item filter-app">
               <div
                 class="portfolio-wrap h-100 d-flex align-items-center justify-content-center"
+                style="width: 42vmin"
               >
                 <img
                   src="./assets/workshop/img/osseb.png"
@@ -248,21 +295,6 @@
             </div>
           </div>
         </div>
-      </section>
-
-      <section class="description">
-        <div class="resume-item">
-          <h4>1. Free Exhibit passes.</h4>
-        </div>
-        <div class="resume-item">
-          <h4>2. Certificate from IIT Bhubaneswar.</h4>
-        </div>
-        <div class="resume-item">
-          <h4>3. Discount on starnite passes.</h4>
-        </div>
-        <div class="resume-item">
-          <h4>4. Summer intership opportunities.</h4>
-        </div>  
       </section>
 
       <section id="services" class="services">
@@ -353,7 +385,7 @@
           window.location.href = "/profile";
         }
         function continueToBooking() {
-          window.location.href = `https://payments.cashfree.com/forms/machinel`;
+          window.location.href = `https://payments.cashfree.com/forms/blockchain`;
         }
       </script>
 
@@ -363,8 +395,7 @@
           // Creating the element anchor that
           // will download pdf
           let element = document.createElement("a");
-          element.href =
-            "./assets/workshop/workshop-pdfs/blockchain.pdf";
+          element.href = "./assets/workshop/workshop-pdfs/blockchain.pdf";
           element.download = "workshop-python.pdf";
           // Adding the element to body
           document.documentElement.appendChild(element);

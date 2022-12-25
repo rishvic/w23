@@ -66,6 +66,7 @@
   </head>
 
   <body class="box custom-cursor">
+    <%- include('../partials/navBar.ejs') %>
     <div id="cursor_follower"></div>
     <main id="main">
       <section id="about" class="about">
@@ -78,7 +79,7 @@
           <div class="row">
             <div class="col-lg-4" data-aos="fade-right">
               <img
-                src="./assets/workshop/img/ai-ml.jpg"
+                src="./assets/workshop/img/iiot.jpg"
                 class="img-fluid"
                 alt=""
               />
@@ -86,7 +87,12 @@
             <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
               <h3>About</h3>
               <p class="fst-italic">
-                The Industrial Internet of things (IIoT) Is the use of smart sensors and actuators to enhance manufacturing and Industrial processes. Also known as the Industrial internet or Industry 4.0, IIoT leverages the power ot smart machines and real-time analytics fo fake advantage of the data that dumb machines have produced In Industrial settings for years.
+                The Industrial Internet of things (IIoT) Is the use of smart
+                sensors and actuators to enhance manufacturing and Industrial
+                processes. Also known as the Industrial internet or Industry
+                4.0, IIoT leverages the power ot smart machines and real-time
+                analytics fo fake advantage of the data that dumb machines have
+                produced In Industrial settings for years.
               </p>
               <div class="row">
                 <div class="col-lg-6">
@@ -117,7 +123,14 @@
           <div class="section-title">
             <h2>What you will learn?</h2>
             <p>
-              You'll learn the basic concepts and features of the Industrial Internet of Things and bulld proJects Utlllzlng the RaspberryPl platform. You'll discover fundamental concepts Of cloud computing, sensor reading and connecting the e RaspberryPl to the Internet, wireless Interfaces and Androld phones. Youll also learn to use the most popular open platforms for managlng sensor data from the e RaspbenyPl, how to ftigger actuators remotely, and how to reprogram e RaspberryPl using
+              You'll learn the basic concepts and features of the Industrial
+              Internet of Things and bulld proJects Utlllzlng the RaspberryPl
+              platform. You'll discover fundamental concepts Of cloud computing,
+              sensor reading and connecting the e RaspberryPl to the Internet,
+              wireless Interfaces and Androld phones. Youll also learn to use
+              the most popular open platforms for managlng sensor data from the
+              e RaspbenyPl, how to ftigger actuators remotely, and how to
+              reprogram e RaspberryPl using
             </p>
           </div>
 
@@ -138,10 +151,19 @@
               </div>
             </div>
 
-            <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div
+              class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
               <div class="count-box">
                 <i class="bi bi-journal-richtext"></i>
-                <span data-purecounter-start="0" data-purecounter-end="9" data-purecounter-duration="1" class="purecounter"></span>
+                <span
+                  data-purecounter-start="0"
+                  data-purecounter-end="9"
+                  data-purecounter-duration="1"
+                  class="purecounter"
+                ></span>
                 <p><strong>Projects</strong></p>
               </div>
             </div>
@@ -178,6 +200,39 @@
                 ></span>
                 <p><strong>Sessions</strong></p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="portfolio section-bg">
+        <div class="container">
+          <div class="section-title">
+            <h2>Perks and Benefits</h2>
+          </div>
+
+          <div
+            class="row portfolio-container"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="col-lg-6 col-md-6 portfolio-item filter-app">
+              <!-- <div
+                class="portfolio-wrap h-100 d-flex align-items-center justify-content-center"
+              > -->
+              <div class="resume-item">
+                <h5>1. Free Exhibit passes.</h5>
+              </div>
+              <div class="resume-item">
+                <h5>2. Certificate from IIT Bhubaneswar.</h5>
+              </div>
+              <div class="resume-item">
+                <h5>3. Discount on starnite passes.</h5>
+              </div>
+              <div class="resume-item">
+                <h5>4. Summer intership opportunities.</h5>
+              </div>
+              <!-- </div> -->
             </div>
           </div>
         </div>
@@ -246,6 +301,7 @@
             <div class="col-lg-4 col-md-6 portfolio-item filter-app">
               <div
                 class="portfolio-wrap h-100 d-flex align-items-center justify-content-center"
+                style="width: 42vmin;"
               >
                 <img
                   src="./assets/workshop/img/osseb.png"
@@ -259,21 +315,6 @@
             </div>
           </div>
         </div>
-      </section>
-
-      <section class="description">
-        <div class="resume-item">
-          <h4>1. Free Exhibit passes.</h4>
-        </div>
-        <div class="resume-item">
-          <h4>2. Certificate from IIT Bhubaneswar.</h4>
-        </div>
-        <div class="resume-item">
-          <h4>3. Discount on starnite passes.</h4>
-        </div>
-        <div class="resume-item">
-          <h4>4. Summer intership opportunities.</h4>
-        </div>  
       </section>
 
       <section id="services" class="services">
@@ -364,7 +405,7 @@
           window.location.href = "/profile";
         }
         function continueToBooking() {
-          window.location.href = `https://payments.cashfree.com/forms/machinel`;
+          window.location.href = `https://payments.cashfree.com/forms/iiot`;
         }
       </script>
 
@@ -374,8 +415,7 @@
           // Creating the element anchor that
           // will download pdf
           let element = document.createElement("a");
-          element.href =
-            "./assets/workshop/workshop-pdfs/IIoT.pdf";
+          element.href = "./assets/workshop/workshop-pdfs/IIoT.pdf";
           element.download = "workshop-python.pdf";
           // Adding the element to body
           document.documentElement.appendChild(element);
