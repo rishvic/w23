@@ -42,6 +42,10 @@ router.get("/workshop-webdev", wsController.fullstack);
 router.get("/workshop-ml", wsController.ml);
 router.get("/workshop-ethicalhacking", wsController.ethicalHacking);
 router.get("/workshop-python", wsController.python);
+router.get("/workshop-automobile", wsController.automobile);
+router.get("/workshop-crypto", wsController.crypto);
+router.get("/workshop-iiot", wsController.iiot);
+router.get("/workshop-dl", wsController.dl);
 //posting a query in contact
 
 //individual sitp routes

@@ -10,6 +10,42 @@ exports.staad = catchAsync(async(req,res,next) => {
     }
 });
 
+exports.iiot= catchAsync(async(req,res,next) => {
+    if(req.user) {
+        const user = await User.findOne({email : req.user.emails[0].value});
+        res.render("workshops/IIot", {participant : user});
+    } else {
+        res.render("workshops/IIot", {participant : false});
+    }
+});
+
+exports.crypto = catchAsync(async(req,res,next) => {
+    if(req.user) {
+        const user = await User.findOne({email : req.user.emails[0].value});
+        res.render("workshops/crypto", {participant : user});
+    } else {
+        res.render("workshops/crypto", {participant : false});
+    }
+});
+
+exports.automobile = catchAsync(async(req,res,next) => {
+    if(req.user) {
+        const user = await User.findOne({email : req.user.emails[0].value});
+        res.render("workshops/automobile", {participant : user});
+    } else {
+        res.render("workshops/automobile", {participant : false});
+    }
+});
+
+exports.dl = catchAsync(async(req,res,next) => {
+    if(req.user) {
+        const user = await User.findOne({email : req.user.emails[0].value});
+        res.render("workshops/deep-learning", {participant : user});
+    } else {
+        res.render("workshops/deep-learning", {participant : false});
+    }
+});
+
 exports.android = catchAsync(async(req,res,next) => {
     if(req.user) {
         const user = await User.findOne({email : req.user.emails[0].value});
