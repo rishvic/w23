@@ -8,15 +8,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Navaneeth-Bysani/w22.git"
+    "type": "git"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Navaneeth-Bysani/w22/issues"
-  },
-  "homepage": "https://github.com/Navaneeth-Bysani/w22#readme",
   "dependencies": {
     "body-parser": "^1.19.1",
     "cookie-session": "^2.0.0",
