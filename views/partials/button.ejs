@@ -1,5 +1,5 @@
 <div class="btn-grp">
-    <div class="btn-item">
+  <div class="btn-item">
       <%if(!participant) {%>
       <button class="button"  onclick="redirectToLogin()">
         REGISTER
@@ -13,7 +13,7 @@
           <div class="button__vertical"></div>
         </button>
         <%} else {%>
-          <button class="button"  onclick="continueToBooking()">
+          <button class="button"  onclick="continueToBooking('<%= link%>')">
             REGISTER
             <div class="button__horizontal"></div>
             <div class="button__vertical"></div>
@@ -27,4 +27,4 @@
         <div class="button__vertical"></div>
       </button>
     </div> -->
-  </div>
+</div>
