@@ -1,70 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="assets/competition/css/main.css" />
-    <!-- ---------------------Preloader----------------------------- -->
-    <link rel="stylesheet" type="text/css" href="css/preloader.css" />
-    <script src="js/preloader.js" defer></script>
-    <link rel="stylesheet" type="text/css" href="css/cursor.css" />
-    <script src="js/cursor.js" defer></script>
-    <title>Wissenaire'23 | Competitions</title>
 
-    <script
-      src="https://code.jquery.com/jquery-3.6.2.min.js"
-      integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA="
-      crossorigin="anonymous"
-    ></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="assets/competition/css/main.css" />
+  <!-- ---------------------Preloader----------------------------- -->
+  <link rel="stylesheet" type="text/css" href="css/preloader.css" />
+  <script src="js/preloader.js" defer></script>
+  <link rel="stylesheet" type="text/css" href="css/cursor.css" />
+  <script src="js/cursor.js" defer></script>
+  <title>Wissenaire'23 | Competitions</title>
 
-    <link href="assets/workshop/img/favicon.png" rel="icon" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//fonts.googleapis.com/css?family=Oswald"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,500,800"
-      rel="stylesheet"
-    />
+  <script src="https://code.jquery.com/jquery-3.6.2.min.js"
+    integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
 
-    <style>
-      * {
-        box-sizing: border-box;
-      }
+  <link href="assets/workshop/img/favicon.png" rel="icon" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,800" rel="stylesheet" />
 
-      body {
-        overflow: hidden;
-        width: 100%;
-        height: 100%;
-        padding: 0;
-        margin: 0;
-        font-family: "Montserrat", sans-serif;
-      }
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-      .btn-grp {
-        display: flex;
-        flex-direction: row;
-      }
+    body {
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      font-family: "Montserrat", sans-serif;
+    }
 
-      .btn-item {
-        margin-right: 35px;
-      }
-    </style>
-  </head>
+    .btn-grp {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .btn-item {
+      margin-right: 35px;
+    }
+  </style>
+</head>
+
+
   <body class="box custom-cursor">
+
     <div id="cursor_follower"></div>
 
     <!-- Slider Wrapper -->
     <div class="css-slider-wrapper" id="ss">
-      <input
-        type="radio"
-        name="slider"
-        class="slide-radio1"
-        checked
-        id="slider_1"
-      />
+
+      <input type="radio" name="slider" class="slide-radio1" checked id="slider_1" />
       <input type="radio" name="slider" class="slide-radio2" id="slider_2" />
       <input type="radio" name="slider" class="slide-radio3" id="slider_3" />
       <input type="radio" name="slider" class="slide-radio4" id="slider_4" />
@@ -113,7 +102,7 @@
             written exam, memory test and an interview.
           </h4>
           <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
-          <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/schoolchamp'}) %>
+          <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/schoolchamp' }) %>
         </div>
         <div class="number-pagination">
           <span>1</span>
@@ -131,8 +120,8 @@
             given amount of time (eg. 2 days)
           </h4>
           <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
-            <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/trusstheframe'}) %>
-          
+          <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/trusstheframe' }) %>
+
         </div>
         <div class="number-pagination">
           <span>2</span>
@@ -149,7 +138,7 @@
             taken by them based on the theme.
           </h4>
           <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
-          <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/shutter'}) %>
+          <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/shutter' }) %>
         </div>
         <div class="number-pagination">
           <span>3</span>
@@ -167,7 +156,7 @@
             the help of memes/cartoons.
           </h4>
           <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
-          <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/scientoons'}) %>
+          <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/scientoons' }) %>
         </div>
         <div class="number-pagination">
           <span>4</span>
@@ -186,7 +175,7 @@
             aptitude, and logical reasoning skills.
           </h4>
           <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
-          <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/mathsolympiad'}) %>
+          <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/mathsolympiad' }) %>
 
         </div>
         <div class="number-pagination">
@@ -205,7 +194,7 @@
             examined during fest.
           </h4>
           <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
-          <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/archimedesdunk'}) %>
+          <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/archimedesdunk' }) %>
 
         </div>
         <div class="number-pagination">
@@ -223,7 +212,7 @@
             in teams of 2.
           </h4>
           <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
-          <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/quizzaire'}) %>
+          <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/quizzaire' }) %>
         </div>
         <div class="number-pagination">
           <span>7</span>
@@ -241,7 +230,7 @@
             domains.
           </h4>
           <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
-          <%- include('../partials/button' , {link: 'https://payments.cashfree.com/forms/mechco'}) %>
+          <%- include('../partials/button' , {link: 'https://payments.cashfree.com/forms/mechco' }) %>
 
         </div>
         <div class="number-pagination">
@@ -260,7 +249,7 @@
             the end, based on the ability of remembering winners will be decided
           </h4>
           <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
-           <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/memorychallenge'}) %>
+          <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/memorychallenge' }) %>
 
         </div>
         <div class="number-pagination">
@@ -279,7 +268,7 @@
             computer screen. Hence it will also judge their typing skills
           </h4>
           <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
-           <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/blindcode'}) %>
+          <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/blindcode' }) %>
 
         </div>
         <div class="number-pagination">
@@ -298,7 +287,7 @@
             code which can produce the correct outputs.
           </h4>
           <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
-           <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/countercypher'}) %>
+          <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/countercypher' }) %>
 
         </div>
         <div class="number-pagination">
@@ -319,7 +308,7 @@
             given.After this 2nd round will be held to well performed teams
           </h4>
           <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
-           <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/eecolloquia'}) %>
+          <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/eecolloquia' }) %>
 
         </div>
         <div class="number-pagination">
@@ -339,7 +328,7 @@
             3min of queries.
           </h4>
           <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
-           <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/civilc'}) %>
+          <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/civilc' }) %>
 
         </div>
         <div class="number-pagination">
@@ -378,7 +367,7 @@
             science and finance.
           </h4>
           <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
-           <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/analysisaces'}) %>
+          <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/analysisaces' }) %>
 
         </div>
         <div class="number-pagination">
@@ -397,7 +386,7 @@
             the help of memes/cartoons.
           </h4>
           <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
-           <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/callofdutymobile'}) %>
+          <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/callofdutymobile' }) %>
 
         </div>
         <div class="number-pagination">
@@ -417,7 +406,7 @@
             objectives.
           </h4>
           <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
-           <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/csgo'}) %>
+          <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/csgo' }) %>
         </div>
         <div class="number-pagination">
           <span>17</span>
@@ -425,74 +414,75 @@
       </div>
     </div>
     <%- include('../partials/preLoader') %>
-    <script>
-      let preLoader = document.getElementById('preloader')
-      $(window).load(function(){
-        preLoader.style.display='none';
-      })
-    </script>
-    
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script>
-      function redirectToLogin() {
-        swal({
-          title: "Authentication Required",
-          text: "You haven't logged into your profile. Kindly login and fill your profile before registration",
-          icon: "warning",
-          button: "Continue to Login",
-          dangerMode: true,
-        }).then((button) => {
-          if (button) {
-            window.location.href = "/auth/google";
-          } else {
-          }
-        });
-      }
-      function redirectToProfile() {
-        swal({
-          title: "Profile details required",
-          text: "Kindly fill your profile details before registration",
-          icon: "warning",
-          button: "Continue to Profile",
-          dangerMode: true,
-        }).then((button) => {
-          if (button) {
-            window.location.href = "/profile";
-          } else {
-          }
-        });
-      }
-      function continueToBooking(paymentLink) {
-        swal({
-          title: "Ready to book your slot",
-          text: `Enter the same email address (${"<%=participant.email%>"}) while filling the payment form. Click continue to continue your booking.`,
-          icon: "success",
-          button: "Continue to booking",
-          dangerMode: true,
-        }).then((button) => {
-          if (button) {
-            window.location.href = paymentLink;
-          }
-        });
-      }
-    </script>
-    <script src="assets/competition/js/scrolling.js"></script>
-    <script src="assets/competition/js/touchScroll/ts1.js"></script>
-    <script src="assets/competition/js/touchScroll/ts2.js"></script>
-    <script src="assets/competition/js/touchScroll/ts3.js"></script>
-    <script src="assets/competition/js/touchScroll/ts4.js"></script>
-    <script src="assets/competition/js/touchScroll/ts5.js"></script>
-    <script src="assets/competition/js/touchScroll/ts6.js"></script>
-    <script src="assets/competition/js/touchScroll/ts7.js"></script>
-    <script src="assets/competition/js/touchScroll/ts8.js"></script>
-    <script src="assets/competition/js/touchScroll/ts9.js"></script>
-    <script src="assets/competition/js/touchScroll/ts10.js"></script>
-    <script src="assets/competition/js/touchScroll/ts11.js"></script>
-    <script src="assets/competition/js/touchScroll/ts12.js"></script>
-    <script src="assets/competition/js/touchScroll/ts13.js"></script>
-    <script src="assets/competition/js/touchScroll/ts14.js"></script>
-    <script src="assets/competition/js/touchScroll/ts15.js"></script>
-    <script src="assets/competition/js/touchScroll/ts16.js"></script>
-    <script src="assets/competition/js/touchScroll/ts17.js"></script>
+      <script>
+        let preLoader = document.getElementById('preloader')
+        $(window).load(function () {
+          preLoader.style.display = 'none';
+        })
+      </script>
+
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+      <script>
+        function redirectToLogin() {
+          swal({
+            title: "Authentication Required",
+            text: "You haven't logged into your profile. Kindly login and fill your profile before registration",
+            icon: "warning",
+            button: "Continue to Login",
+            dangerMode: true,
+          }).then((button) => {
+            if (button) {
+              window.location.href = "/auth/google";
+            } else {
+            }
+          });
+        }
+        function redirectToProfile() {
+          swal({
+            title: "Profile details required",
+            text: "Kindly fill your profile details before registration",
+            icon: "warning",
+            button: "Continue to Profile",
+            dangerMode: true,
+          }).then((button) => {
+            if (button) {
+              window.location.href = "/profile";
+            } else {
+            }
+          });
+        }
+        function continueToBooking(paymentLink) {
+          swal({
+            title: "Ready to book your slot",
+            text: `Enter the same email address (${"<%=participant.email%>"}) while filling the payment form. Click continue to continue your booking.`,
+            icon: "success",
+            button: "Continue to booking",
+            dangerMode: true,
+          }).then((button) => {
+            if (button) {
+              window.location.href = paymentLink;
+            }
+          });
+        }
+      </script>
+      <script src="assets/competition/js/scrolling.js"></script>
+      <script src="assets/competition/js/touchScroll/ts1.js"></script>
+      <script src="assets/competition/js/touchScroll/ts2.js"></script>
+      <script src="assets/competition/js/touchScroll/ts3.js"></script>
+      <script src="assets/competition/js/touchScroll/ts4.js"></script>
+      <script src="assets/competition/js/touchScroll/ts5.js"></script>
+      <script src="assets/competition/js/touchScroll/ts6.js"></script>
+      <script src="assets/competition/js/touchScroll/ts7.js"></script>
+      <script src="assets/competition/js/touchScroll/ts8.js"></script>
+      <script src="assets/competition/js/touchScroll/ts9.js"></script>
+      <script src="assets/competition/js/touchScroll/ts10.js"></script>
+      <script src="assets/competition/js/touchScroll/ts11.js"></script>
+      <script src="assets/competition/js/touchScroll/ts12.js"></script>
+      <script src="assets/competition/js/touchScroll/ts13.js"></script>
+      <script src="assets/competition/js/touchScroll/ts14.js"></script>
+      <script src="assets/competition/js/touchScroll/ts15.js"></script>
+      <script src="assets/competition/js/touchScroll/ts16.js"></script>
+      <script src="assets/competition/js/touchScroll/ts17.js"></script>
   </body>
+
 </html>
