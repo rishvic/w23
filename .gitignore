@@ -1,3 +1,5 @@
+.next/
+.yarn/
 .env
 /node_modules
 .vscode
