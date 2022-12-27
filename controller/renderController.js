@@ -145,7 +145,5 @@ exports.renderHome = async (req, res) => {
   }
 }
 exports.renderPreloader = async (req, res) => {
-  console.log(path.join(__dirname))
   res.sendFile(path.join(__dirname, '../views/intro/intro.html'))
-  // res.sendFile("intro/intro.html", { participant: false })
 }
