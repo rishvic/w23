@@ -8,7 +8,9 @@
     box-sizing: border-box;
     position: relative;
 }
-
+#ok{
+    height: fit-content;
+}
 html,
 body {
     height: 100%;
@@ -33,7 +35,6 @@ h1 {
     font-family: 'Righteous', serif;
     font-size: 15vw;
     text-shadow: .03em .03em 0 hsla(230, 40%, 50%, 1);
-    margin-bottom: -900px;
 }
 
 h1:after {
@@ -81,7 +82,7 @@ p {
 
 p span {
     font: 700 "Oswald", sans-serif;
-    font-size: max(3vw, 20px);
+    font-size: max(2vw, 10px);
     letter-spacing: 0;
     padding: 0.25em 0 0.325em;
     display: block;
