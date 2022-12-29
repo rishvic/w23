@@ -29,7 +29,7 @@ router.get("/guest-lectures", renderController.renderGuestLectures);
 router.get("/exhibits", renderController.renderExhibits);
 router.get("/initiatives", renderController.renderInitiatives);
 router.get("/highlights", renderController.renderHighlights);
-router.get("/comingsoon", renderController.renderHighlights);
+router.get("/comingsoon", renderController.renderComingSoon);
 router.get("/teams", renderController.renderTeam);
 router.get("/sponsors", renderController.renderSponsors);
 router.get("/reachUs", renderController.renderContact);
