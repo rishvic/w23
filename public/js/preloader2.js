@@ -7,7 +7,7 @@ Modernizr.addTest('textstroke', function () {
     return true
   }
 })
-
+// jQuery("p").fitText(0.38);
 document.addEventListener('DOMContentLoaded', () => {
   let bind = false
   let text = null
@@ -71,7 +71,6 @@ function startAnimation() {
   setTimeout(() => {
     window.location.href = '/home'
   }, 46000)
-  // In milliseconds, how long each one is
   const creditsMs = 3000
   const scenesMs = [
     creditsMs,

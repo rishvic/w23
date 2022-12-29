@@ -137,17 +137,16 @@ exports.renderProfile = async (req, res) => {
 };
 
 exports.renderHome = async (req, res) => {
-
   if (req.user) {
     const user = await findUser(req.user.emails[0].value);
-    res.render("index", { participant: user });
+    res.render(req.useragent.isMobile ? "indexMobile" : "index", { participant: user });
   } else {
-    res.render("index", { participant: false });
+    res.render(req.useragent.isMobile ? "indexMobile" : "index", { participant: false });
   }
 }
 exports.renderPreloader = async (req, res) => {
   res.sendFile(path.join(__dirname, '../views/intro/intro.html'))
 }
 exports.renderComingSoon = async (req, res) => {
-  res.render("comingSoon", { participant: user });
+  res.render("comingSoon", { participant: false });
 }

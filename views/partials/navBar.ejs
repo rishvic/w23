@@ -1,9 +1,12 @@
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script>
   $(document).ready(function () {
     $('.toggle').click(function () {
       $('.menu').toggleClass('active');
     });
+    $('.toggle').bind('tap', function () {
+      $('.menu').toggleClass('active');
+    })
   });
 </script>
 <style>
@@ -16,7 +19,7 @@
     position: fixed;
     top: 40px;
     left: 40px;
-    z-index: 2000;
+    z-index: 200000;
   }
 
   .toggle a {
@@ -63,8 +66,7 @@
     color: #262626;
   }
 
-  ul li a:hover {
-  }
+  ul li a:hover {}
 
   .menu.active {
     left: 0;
@@ -76,7 +78,8 @@
 </div>
 <div class="menu">
   <ul>
-    <li><a href="/profile"></gn in</a></li>
+    <li><a href="/profile"></gn in</a>
+    </li>
     <li><a href="/about">About</a></li>
     <li><a href="/competitions">Competitions</a></li>
     <li><a href="/comingsoon">Guest lectures</a></li>

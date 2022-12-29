@@ -1,3 +1,4 @@
+const useragent = require('express-useragent');
 const express = require('express');
 const path = require('path');
 const User = require('./model/userModel');
@@ -21,6 +22,8 @@ const app = express();
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
+
+app.use(useragent.express());
 app.use(express.static('public'));
 // app.use(express.static(path.join(__dirname, 'public')));
 
@@ -30,11 +33,11 @@ app.use(hpp());
 
 app.use(express.json());
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({limit: '50mb', extended: true}));
+app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
 app.use(session({
-  secret : "Our little Secret Here",
-  resave : true,
-  saveUninitialized : false,
+  secret: "Our little Secret Here",
+  resave: true,
+  saveUninitialized: false,
 }));
 //routes
 // app.use('/api/v1/auth', authRouter);
@@ -43,52 +46,54 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-passport.serializeUser(function(user,done){
-    done(null, user);
+passport.serializeUser(function (user, done) {
+  done(null, user);
 });
-  
-passport.deserializeUser(async function(user, done) {
-    await done(null, user);
+
+passport.deserializeUser(async function (user, done) {
+  await done(null, user);
 });
 
 const getIdValue = async () => {
-    let counter = await Counter.findOne({name : "user count"});
-    if(!counter) {
-        counter = await Counter.create({});
+  let counter = await Counter.findOne({ name: "user count" });
+  if (!counter) {
+    counter = await Counter.create({});
+  }
+  let updatedCounter = await Counter.findOneAndUpdate({ name: "user count" }, {
+    $inc: {
+      number: 1
     }
-    let updatedCounter = await Counter.findOneAndUpdate({name : "user count"}, {$inc : {
-        number : 1
-    }}, {new : true});
-    console.log(updatedCounter);
-    return updatedCounter.number;
+  }, { new: true });
+  console.log(updatedCounter);
+  return updatedCounter.number;
 }
 
 passport.use(new GoogleStrategy({
-    clientID : config.OAUTH_CLIENT_ID,
-    clientSecret : config.OAUTH_CLIENT_SECRET,
-    callbackURL : `${config.HOST}/auth/google/callback/`,
-    userProfileURL  : 'https://www.googleapis.com/oauth2/v3/userinfo'
-}, function(accessToken, refreshToken, profile, done) {
+  clientID: config.OAUTH_CLIENT_ID,
+  clientSecret: config.OAUTH_CLIENT_SECRET,
+  callbackURL: `${config.HOST}/auth/google/callback/`,
+  userProfileURL: 'https://www.googleapis.com/oauth2/v3/userinfo'
+}, function (accessToken, refreshToken, profile, done) {
   process.nextTick(async () => {
-    const user = await User.findOne({email : profile.emails[0].value});
-    if(!user) {
-        console.log('no user in db');
-        // console.log(profile);
-        const newId = await getIdValue();
-        const userDetails = {
-            googleid : profile.id,
-            photo : profile.photos[0].value,
-            accesstoken : accessToken,
-            name : profile.displayName,
-            email : profile.emails[0].value,
-            id : newId
-        }
-        const newUser = await User.create(userDetails);
-        // console.log('created new user', newUser);
-        return done(null, profile);
+    const user = await User.findOne({ email: profile.emails[0].value });
+    if (!user) {
+      console.log('no user in db');
+      // console.log(profile);
+      const newId = await getIdValue();
+      const userDetails = {
+        googleid: profile.id,
+        photo: profile.photos[0].value,
+        accesstoken: accessToken,
+        name: profile.displayName,
+        email: profile.emails[0].value,
+        id: newId
+      }
+      const newUser = await User.create(userDetails);
+      // console.log('created new user', newUser);
+      return done(null, profile);
     } else {
-        console.log('user already exists');
-        return done(null, profile);
+      console.log('user already exists');
+      return done(null, profile);
     }
   })
 })
@@ -96,12 +101,12 @@ passport.use(new GoogleStrategy({
 
 app.use('/', indexRouter);
 
-app.get('/auth/google', passport.authenticate('google', {prompt : 'consent', scope : ['profile', 'email'] }));
-app.get('/auth/google/callback', passport.authenticate('google', { successRedirect: '/profile', failureRedirect: '/'}),
-  function(req, res) {
-    req.session.save(); 
+app.get('/auth/google', passport.authenticate('google', { prompt: 'consent', scope: ['profile', 'email'] }));
+app.get('/auth/google/callback', passport.authenticate('google', { successRedirect: '/profile', failureRedirect: '/' }),
+  function (req, res) {
+    req.session.save();
     // console.log(req);
-    res.redirect('/profile')   
+    res.redirect('/profile')
   }
 );
 app.get('/logout', (req, res) => {
@@ -111,7 +116,7 @@ app.get('/logout', (req, res) => {
 })
 
 
-app.all('*', (req,res,next) => {
+app.all('*', (req, res, next) => {
   res.redirect('/');
 });
 
