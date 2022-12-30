@@ -8,9 +8,11 @@
     box-sizing: border-box;
     position: relative;
 }
-#ok{
+
+#ok {
     height: fit-content;
 }
+
 html,
 body {
     height: 100%;
@@ -78,26 +80,30 @@ p {
     border: 4px double rgba(255, 255, 255, 0.25);
     border-width: 4px 0;
     padding: 1.5em 0em;
+
+    font-size: max(2vw, 10px);
+    color: white;
 }
 
 p span {
-    font: 700 "Oswald", sans-serif;
+    font: 900 "Oswald", sans-serif;
     font-size: max(2vw, 10px);
+    color: white;
     letter-spacing: 0;
     padding: 0.25em 0 0.325em;
     display: block;
     margin: 0 auto;
-    text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+    text-shadow: 0 0 80px rgba(0, 0, 0, 0.5);
     /* Clip Background Image */
-    background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
-    -webkit-background-clip: text;
-    background-clip: text;
+    /* background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png); */
+    /* -webkit-background-clip: text; */
+    /* background-clip: text; */
     /* Animate Background Image */
-    -webkit-text-fill-color: transparent;
-    -webkit-animation: aitf 80s linear infinite;
+    /* -webkit-text-fill-color: transparent; */
+    /* -webkit-animation: aitf 80s linear infinite; */
     /* Activate hardware acceleration for smoother animations */
-    -webkit-transform: translate3d(0, 0, 0);
-    -webkit-backface-visibility: hidden;
+    /* -webkit-transform: translate3d(0, 0, 0); */
+    /* -webkit-backface-visibility: hidden; */
 }
 
 /* Animate Background Image */
@@ -121,7 +127,7 @@ p span {
     border-top: 10px solid #f20e0e;
     box-shadow: 16px 13px 42px -17px rgba(0, 0, 0, 0.69);
     height: 350px;
-    width: 600px;
+    /* width: 600px; */
 }
 
 hr {
@@ -151,3 +157,23 @@ hr {
     cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAABgAAAAYADwa0LPAAABHElEQVRIx8WVwU7CQBCGvxDhpC9GUeuL9C6+ACAvJiQQLxLwwANwFEh6ADw4m6x1pt1da5xkss3uzD+d+bIt/KMNgBlQAhfDS4nJUsQvkZ7HFJhL0iPQq4nrAUOJfYkpsJek64DYG4nda4cdI+ld1iKgg0KeN6FvfwdsiWewBW6bxHPglCDu/ATc1xVYEgZXG5WDvagLPBIOt2oO9sHfrEJey9oEV+ugqGj8sFS4QbBzfge3EXYqXG1UKuwmuF1gCuzEJ8CVEavCfpXNodHBszKGidHBk5wv/YMH4Nwig7NofrNxiwVG2uwW2KAtoSDAzuo+0SEFfMAfbsO/yStZY2+x34G7zW9aQNYig771Fhlfv74yQbSUXFP8T+wTM/HpNc4BzI0AAAAldEVYdGRhdGU6Y3JlYXRlADIwMjItMTAtMTRUMTg6NDY6NTgrMDA6MDAV+GItAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIyLTEwLTE0VDE4OjQ2OjU4KzAwOjAwZKXakQAAAABJRU5ErkJggg==") 12 12 , auto;
     line-height:24px
   } */
+.wrapper {
+    width: 80%;
+    max-width: 600px;
+    height: 100%;
+    margin: 0 auto;
+    background: #CCC
+}
+
+.h_iframe {
+    position: relative;
+    padding-top: 56%;
+}
+
+.h_iframe iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
