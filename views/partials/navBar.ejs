@@ -85,6 +85,27 @@
   .toggle {
     color: white !important;
   }
+
+  body {
+    text-align: center;
+  }
+
+  .letter {
+    font-family: monospace;
+    font-size: 7vmin;
+    font-weight: bolder;
+    text-shadow: 0.03em 0.03em 0.02em #777;
+    will-change: transform;
+    cursor: default;
+
+    display: inline-block;
+    transition: transform 0.2s ease;
+  }
+
+  /* This is all we need :D */
+  .letter:hover {
+    transform: scaleX(0.8) scaleY(1.2);
+  }
 </style>
 <div class="toggle">
   <a><i class="fa fa-bars "></i></a>
@@ -93,16 +114,32 @@
   <ul class="meunul">
     <li><a href="/profile"></gn in</a>
     </li>
-    <li><a href="/about">About</a></li>
-    <li><a href="/competitions">Competitions</a></li>
-    <li><a href="/comingsoon">Guest lectures</a></li>
-    <li><a href="/comingsoon">Exhibits</a></li>
-    <li><a href="/workshops">Workshops</a></li>
-    <li><a href="/comingsoon">Initiatives</a></li>
-    <li><a href="/comingsoon">Highlights</a></li>
-    <li><a href="/comingsoon">Qwissenaire</a></li>
-    <li><a href="/comingsoon">Team</a></li>
-    <li><a href="/comingsoon">Sponsor</a></li>
-    <li><a href="/comingsoon">Reach Us</a></li>
+    <li><a href="/about"><span class="letter">About</span></a></li>
+    <li><a href="/competitions"> <span class="letter"> Competitions</span> </a></li>
+    <li><a href="/comingsoon"> <span class="letter"> Guest lectures</span> </a></li>
+    <li><a href="/comingsoon"> <span class="letter"> Exhibits</span> </a></li>
+    <li><a href="/workshops"> <span class="letter"> Workshops </span> </a></li>
+    <li><a href="/comingsoon"> <span class="letter"> Initiatives </span> </a></li>
+    <li><a href="/comingsoon">
+        <span class="letter"> Highlights </span>
+      </a></li>
+    <li><a href="/comingsoon">
+
+        <span class="letter"> Qwissenaire</span>
+      </a></li>
+    <li><a href="/comingsoon">
+
+        <span class="letter"> Team</span>
+      </a></li>
+    <li><a href="/comingsoon">
+
+        <span class="letter"> Sponsor</span>
+      </a></li>
+    <li><a href="/comingsoon">
+
+        <span class="letter">
+          Reach Us
+        </span>
+      </a></li>
   </ul>
 </div>
