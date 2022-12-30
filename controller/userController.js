@@ -5,7 +5,6 @@ const catchAsync = require('./../utils/catchAsync');
 
 exports.updateProfile = catchAsync(async (req,res, next) => {
     const user = await User.findOne({email : req.user.emails[0].value});
-    console.log("From Profile",req.body);
     var wissid;
     if (user.id < 10) wissid = 'W23R1000' + user.id;
     else if (user.id < 100) wissid = 'W23R100' + user.id;
@@ -41,7 +40,6 @@ exports.postContact = catchAsync(async(req,res, next) => {
         message : req.body.message
     }
     const contact = await Contact.create(contactinfo);
-    console.log(req.body);
     res.status(200).json({
         status : 'success',
         message : 'contact created successfully',

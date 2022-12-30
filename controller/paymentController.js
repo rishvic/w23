@@ -30,7 +30,6 @@ exports.initiatePayment = catchAsync(async (req,res,next) => {
         if(err) {
             throw err;
         }
-        console.log(order);
         res.status(200).json({
             order,
             key : razorpay_key,
