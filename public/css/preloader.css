@@ -1,3 +1,27 @@
+@import url('http://getbootstrap.com/dist/css/bootstrap.css');
+ @media (min-width: 768px) {
+    .row {
+        position: relative;
+    }
+    #read-more {
+        position: absolute;
+        bottom: 20px;
+        right: 40px;
+        z-index: 1200;
+        font-size: 2vh;
+        font-family:monospace;
+        background-color: #C8C6C7;
+        font-weight: 900;
+        padding: 20px;
+        border: 10px;
+        border-radius: 50px;
+    }
+    .col-sm-7 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+}
 @font-face {
   font-family: "BenguiatITCW01-BoldCn";
   src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/161676/BenguiatProITC-BoldCond.eot") format("embedded-opentype"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/161676/BenguiatProITC-BoldCond.woff") format("woff"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/161676/BenguiatProITC-BoldCond.ttf") format("truetype");

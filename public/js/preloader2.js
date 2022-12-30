@@ -65,7 +65,9 @@ function start() {
     // window.location.href = 'https://www.geeksforgeeks.org/'
   })
 }
-
+function ExecFunc() {
+  window.location.href = '/home'
+}
 // Kick off the animation
 function startAnimation() {
   setTimeout(() => {
