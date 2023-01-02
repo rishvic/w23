@@ -62,32 +62,37 @@ body {
 
 .inside-page__heading--city,
 .card-front__text-view--city {
-  color: #ff62b2;
+  color: #616161;
 }
 
 .inside-page__heading--ski,
 .card-front__text-view--ski {
-  color: #2aaac1;
+
+  color: #616161;
 }
 
 .inside-page__heading--beach,
 .card-front__text-view--beach {
-  color: #fa7f67;
+
+  color: #616161;
 }
 
 .inside-page__heading--camping,
 .card-front__text-view--camping {
-  color: #00b97c;
+
+  color: #616161;
 }
 
 .inside-page__heading--ethical,
 .card-front__text-view--ethical {
-  color: #ca1919;
+  
+  color: #616161;
 }
 
 .inside-page__heading--alml,
 .card-front__text-view--alml {
-  color: #f39720;
+
+  color: #616161;
 }
 
 /* Front cover */
@@ -152,57 +157,57 @@ body {
 }
 
 .inside-page__btn--city {
-  border-color: #ff40a1;
-  color: #ff40a1;
+  border-color: #616161;
+  color: #616161;
 }
 
 .inside-page__btn--city::before {
-  background-color: #ff40a1;
+  background-color: #616161;
 }
 
 .inside-page__btn--ski {
-  border-color: #279eb2;
-  color: #279eb2;
+  border-color: #616161;
+  color: #616161;
 }
 
 .inside-page__btn--ski::before {
-  background-color: #279eb2;
+  background-color: #616161;
 }
 
 .inside-page__btn--beach {
-  border-color: #fa7f67;
-  color: #fa7f67;
+  border-color: #616161;
+  color: #616161;
 }
 
 .inside-page__btn--beach::before {
-  background-color: #fa7f67;
+  background-color: #616161;
 }
 
 .inside-page__btn--camping {
-  border-color: #00b97d;
-  color: #00b97d;
+  border-color: #616161;
+  color: #616161;
 }
 
 .inside-page__btn--ethical {
-  border-color: #ca1919;
-  color: #ca1919;
+  border-color: #616161;
+  color: #616161;
 }
 
 .inside-page__btn--alml {
-  border-color: #f39720;
-  color: #f39720;
+  border-color: #616161;
+  color: #616161;
 }
 
 .inside-page__btn--camping::before {
-  background-color: #00b97d;
+  background-color: #616161;
 }
 
 .inside-page__btn--ethical::before {
-  background-color: #ca1919;
+  background-color: #616161;
 }
 
 .inside-page__btn--alml::before {
-  background-color: #f39720;
+  background-color: #616161;
 }
 
 .inside-page__btn:hover {
@@ -334,38 +339,38 @@ body {
 
 .card-front__tp--city {
   background: linear-gradient(to bottom,
-      #ff73b9,
-      #ff40a1);
+      #888,
+      #616161);
 }
 
 .card-front__tp--ski {
   background: linear-gradient(to bottom,
-      #47c2d7,
-      #279eb2);
+      #888,
+      #616161);
 }
 
 .card-front__tp--beach {
   background: linear-gradient(to bottom,
-      #fb9b88,
-      #f86647);
+      #888,
+      #616161);
 }
 
 .card-front__tp--camping {
   background: linear-gradient(to bottom,
-      #00db93,
-      #00b97d);
+      #888,
+      #616161);
 }
 
 .card-front__tp--ethical {
   background: linear-gradient(to bottom,
-      #f57084,
-      #b9001c);
+      #888,
+      #616161);
 }
 
 .card-front__tp--alml {
   background: linear-gradient(to bottom,
-      #ebdb64,
-      #f39720);
+      #888,
+      #616161);
 }
 
 /* Front card's bottom section */

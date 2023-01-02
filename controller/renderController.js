@@ -144,7 +144,12 @@ exports.renderHome = async (req, res) => {
   }
 }
 exports.renderPreloader = async (req, res) => {
-  res.sendFile(path.join(__dirname, '../views/intro/intro.html'))
+  const mobileOrNot = req.useragent.isMobile;
+  if (!mobileOrNot)
+    res.sendFile(path.join(__dirname, '../views/intro/intro.html'))
+  else {
+    res.sendFile(path.join(__dirname, '../views/intro/introMobile.html'))
+  }
 }
 exports.renderComingSoon = async (req, res) => {
   res.render("comingsoon", { participant: false });
