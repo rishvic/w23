@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <link href="assets/workshop/img/favicon.png" rel="icon">
     <!-- ---------------------Preloader----------------------------- -->
-    <link rel="stylesheet" type="text/css" href="css/preloader.css" />
-    <script src="js/preloader.js" defer></script>
+    <!-- <link rel="stylesheet" type="text/css" href="css/preloader.css" /> -->
+    <!-- <script src="js/preloader.js" defer></script> -->
 
     <link rel="stylesheet" type="text/css" href="css/cursor.css" />
     <script src="js/cursor.js" defer></script>
@@ -40,13 +40,17 @@
         <script type="module">
             import "./assets/landing/javascripts/globe.mjs";
         </script>
+        <div class="background"></div>
+        <!-- <div id="background"> -->
+            <!-- <img src="../public/assets/" class="stretch" alt="" /> -->
+        <!-- </div> -->
         <main class="text-light container">
             <section id="landing" class="row align-items-center">
                 <section id="tagline" class="col-md-8">
                     <div class="wrapper">
 
-                        <span style="letter-spacing: 5px;" data-text="Aeternum"></span>
-                        <span data-text="Reis" style="margin-top: 110px;"></span>
+                        <span style="" data-text="Aeternum"></span>
+                        <span data-text="Reis" style=""></span>
                     </div>
                 </section>
                 <section id="globe" class="col-md-4"></section>
@@ -90,13 +94,13 @@
 
             btnClose.addEventListener("click", closeBody);
         </script>
-        <%- include('./partials/preLoader') %>
+        <!-- <%- include('./partials/preLoader') %>
             <script>
                 let preLoader = document.getElementById("preloader");
                 $(window).load(function () {
                     preLoader.style.display = "none";
                 });
-
+ -->
             </script>
 </body>
 

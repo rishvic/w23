@@ -23,7 +23,7 @@ const app = express();
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
-app.use(useragent.express());
+app.use(useragent.express()); //adds header to check request from mobile or laptop
 app.use(express.static('public'));
 // app.use(express.static(path.join(__dirname, 'public')));
 
