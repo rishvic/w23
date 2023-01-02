@@ -1,9 +1,3 @@
-html,body {
-    background: url("/assets/landing/images/bg-poster.jpg") no-repeat center center fixed;
-    background-size: cover;
-    height: 100%;
-    overflow: hidden;
-  }
 .btnKnow {
     text-align: center;
     z-index: 10;
@@ -75,12 +69,6 @@ html,body {
 
 .hm-gradient {
     background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
-}
-
-.background {
-    background-image: url("/assets/landing/images/bg-poster.jpg");
-    background-size: cover;
-    z-index: 100;
 }
 
 .navbar .dropdown-menu a:hover {
