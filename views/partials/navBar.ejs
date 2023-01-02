@@ -10,6 +10,8 @@
   });
 </script>
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
   body {
     margin: 0;
     padding: 0;
@@ -42,8 +44,7 @@
     width: 100%;
     height: 100%;
     background-color: #4158D0;
-    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-
+    background-image: linear-gradient(to right, #072142, #14216d 42%, #160d4b);
     z-index: 1;
     transition: 0.5s;
   }
@@ -59,7 +60,8 @@
   }
 
   li {
-    font-family: monospace;
+    /* font-family: monospace; */
+    font-family: 'Didact Gothic', sans-serif;
   }
 
   .meunul li {
@@ -69,11 +71,12 @@
   .meunul li a {
     padding: 10px;
     display: inline-block;
-    font-family: verdana;
+
+    font-family: 'Didact Gothic', sans-serif;
     font-size: 2em;
     text-decoration: none;
     text-transform: uppercase;
-    color: #262626;
+    color: white;
   }
 
   .meunul li a:hover {}
@@ -92,9 +95,8 @@
   }
 
   .letter {
-    font-family: monospace;
-    font-size: 7vmin;
-    font-weight: bolder;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 5vmin;
     text-shadow: 0.03em 0.03em 0.02em #777;
     will-change: transform;
     cursor: default;
@@ -105,7 +107,7 @@
 
   /* This is all we need :D */
   .letter:hover {
-    transform: scaleX(0.8) scaleY(1.2);
+    transform: scaleX(1.2) scaleY(1.1);
   }
 </style>
 <div class="toggle">
