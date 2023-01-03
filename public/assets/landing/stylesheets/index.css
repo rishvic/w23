@@ -10771,7 +10771,7 @@ textarea.form-control-lg {
   }
 }
 body {
-  background: url("/images/bg-poster.jpg") no-repeat;
+  background: url("/img/bg-poster.jpg") no-repeat;
   background-size: cover;
   min-width: 100vw;
   min-height: 100vh;

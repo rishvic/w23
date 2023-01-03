@@ -3,7 +3,11 @@ import { TrackballControls } from "three/addons/controls/TrackballControls.js";
 import { OBJLoader } from "three/addons/loaders/OBJLoader.js";
 import { MeshSurfaceSampler } from "three/addons/math/MeshSurfaceSampler.js";
 
-let dim = Math.min(window.innerWidth, window.innerHeight) / 2;
+function globeDim() {
+  return 4 * Math.min(window.innerWidth, window.innerHeight) / 7;
+}
+
+let dim = globeDim();
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, 1, 0.1, 1000);
 
@@ -185,7 +189,7 @@ function render(a) {
 window.addEventListener("resize", onWindowResize, false);
 
 function onWindowResize() {
-  let dim = Math.min(window.innerWidth, window.innerHeight) / 2;
+  let dim = globeDim();
   camera.updateProjectionMatrix();
   renderer.setSize(dim, dim);
 }
