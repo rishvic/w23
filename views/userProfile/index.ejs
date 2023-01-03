@@ -124,9 +124,9 @@
                       <div class="form-group focused">
                         <label class="form-control-label" for="input-username">Institute Name</label>
                         <% if (participant.institute ) { %>
-                        <input type="text" id="input-username" class="form-control form-control-alternative" placeholder="<%=participant.institute%>" name = "institute" required>
+                        <input type="text" id="input-username" class="form-control form-control-alternative" value="<%=participant.institute%>" name = "institute" required>
                         <%} else {%>
-                        <input type="text" id="input-username" class="form-control form-control-alternative" placeholder="IIT Bhubaneswar" name = "institute" required>
+                        <input type="text" id="input-username" class="form-control form-control-alternative" name = "institute" required>
                         <%}%>
                       </div>
                     </div>
@@ -136,7 +136,7 @@
                         <% if (participant.branch ) { %>
                         <input type="email" id="input-email" class="form-control form-control-alternative" value="<%= participant.branch%>"  name = "branch" required>
                         <%} else {%>
-                        <input type="email" id="input-email" class="form-control form-control-alternative" placeholder="CSE"  name = "branch" required>
+                        <input type="email" id="input-email" class="form-control form-control-alternative" name = "branch" required>
                         <%}%>
                       </div>
                     </div>
@@ -148,7 +148,7 @@
                         <% if (participant.year ) { %>
                         <input type="text" id="input-first-name" class="form-control form-control-alternative" value="<%= participant.year %>" name = "year" required>
                         <%} else {%>
-                        <input type="text" id="input-first-name" class="form-control form-control-alternative" placeholder="4" name = "year" required>
+                        <input type="text" id="input-first-name" class="form-control form-control-alternative" name = "year" required>
                         <%}%>
                       </div>
                     </div>
@@ -158,7 +158,7 @@
                         <% if (participant.city ) { %>
                         <input type="text" id="input-last-name" class="form-control form-control-alternative" value="<%= participant.city%>" name = "city" required>
                           <%} else {%>
-                        <input type="text" id="input-last-name" class="form-control form-control-alternative" placeholder="Bhubaneswar" name = "city" required>
+                        <input type="text" id="input-last-name" class="form-control form-control-alternative" name = "city" required>
                         <%}%>
                       </div>
                     </div>
@@ -175,7 +175,7 @@
                         <% if (participant.phoneNumber ) { %>
                         <input id="input-address" class="form-control form-control-alternative" value="<%= participant.phoneNumber%>" name = "phoneNumber" type="text" required>
                         <%} else {%>
-                        <input id="input-address" class="form-control form-control-alternative" placeholder="Enter your Phone No." name = "phoneNumber" type="text" required>
+                        <input id="input-address" class="form-control form-control-alternative" name = "phoneNumber" type="text" required>
                         <%}%>
                       </div>
                     </div>
@@ -187,7 +187,7 @@
                         <% if (participant.caref ) { %>
                         <input type="text" id="input-country" class="form-control form-control-alternative" value="<%= participant.caref %>" name="caref">
                         <%} else {%>
-                          <input type="text" id="input-country" class="form-control form-control-alternative" placeholder="W23001" name="caref">
+                          <input type="text" id="input-country" class="form-control form-control-alternative" name="caref">
                         <% }%>
                         </div>
                     </div>
@@ -211,9 +211,19 @@
       preLoader.style.display='none';
     })
   </script>
+  <script src="https://unpkg.com/validator@13.7.0/validator.min.js"></script>
+  <script src="/js/validate-profile.js"></script>
   <script>
     $("#submitBtn").click(function() {
       var form = $("form");
+      var data = form.serialize();
+      console.log(data);
+      var errors = validateProfileForm(form);
+      if (errors.length > 0) {
+        swal("Invalid form data", errors.join(","), "error");
+        return;
+      }
+
       console.log('ok');
       $.ajax({
           type: "POST",
