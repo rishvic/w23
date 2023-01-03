@@ -200,6 +200,10 @@
   width: 635px;
   padding-left: 100px;
   margin-left: 10px;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /* Slider Inner Slide Effect */

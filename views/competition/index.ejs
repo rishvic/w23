@@ -39,6 +39,20 @@
     .btn-item {
       margin-right: 35px;
     }
+
+    .next-prev-grp {
+      display: flex;
+      flex-direction: row;
+      justify-content: right;
+    }
+
+    .next-prev-item {
+      margin-left: 35px;
+    }
+
+    .next-prev-item .button {
+      padding: 0.5em 0.5em;
+    }
   </style>
 </head>
 
@@ -92,13 +106,18 @@
       <div class="slider slide-1" id="s1">
         <img src="assets/competition/img/school champ.png" alt="" />
         <div class="slider-content" style="margin: 2%">
-          <h2>SCHOOL CHAMP</h2>
-          <h4>
-            It is an event for school children of 8-10 class which includes
-            written exam, memory test and an interview.
-          </h4>
+          <section>
+            <h2>SCHOOL CHAMP</h2>
+            <h4>
+              It is an event for school children of 8-10 class which includes
+              written exam, memory test and an interview.
+            </h4>
+          </section>
           <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
-          <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/schoolchamp' }) %>
+          <section>
+            <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/schoolchamp' }) %>
+            <%- include('../partials/competition/next-prev-buttons', {page: 1}) %>
+          </section>
         </div>
         <div class="number-pagination">
           <span>1</span>
@@ -109,14 +128,19 @@
       <div class="slider slide-2" id="s2">
         <img src="assets/competition/img/truss the frame.png" alt="" />
         <div class="slider-content">
-          <h2>TRUSS THE FRAME</h2>
-          <h4>
-            Building a truss which is less than 200g by following the given
-            instructions using given materials(100 ice cream sticks, fevicol) in
-            given amount of time (eg. 2 days)
-          </h4>
+          <section>
+            <h2>TRUSS THE FRAME</h2>
+            <h4>
+              Building a truss which is less than 200g by following the given
+              instructions using given materials(100 ice cream sticks, fevicol) in
+              given amount of time (eg. 2 days)
+            </h4>
+          </section>
           <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
-          <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/trusstheframe' }) %>
+          <section>
+            <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/trusstheframe' }) %>
+            <%- include('../partials/competition/next-prev-buttons', {page: 2}) %>
+          </section>
 
         </div>
         <div class="number-pagination">
@@ -128,13 +152,18 @@
       <div class="slider slide-3" id="s3">
         <img src="assets/competition/img/shutter.png" alt="" />
         <div class="slider-content">
-          <h2>SHUTTER</h2>
-          <h4>
-            This is an event in which participants should submit photographs
-            taken by them based on the theme.
-          </h4>
+          <section>
+            <h2>SHUTTER</h2>
+            <h4>
+              This is an event in which participants should submit photographs
+              taken by them based on the theme.
+            </h4>
+          </section>
           <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
-          <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/shutter' }) %>
+          <section>
+            <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/shutter' }) %>
+            <%- include('../partials/competition/next-prev-buttons', {page: 3}) %>
+          </section>
         </div>
         <div class="number-pagination">
           <span>3</span>
@@ -145,14 +174,19 @@
       <div class="slider slide-4" id="s4">
         <!-- <img src="assets/competition/img/Sciencetoon1.jpg" alt="" /> -->
         <div class="slider-content">
-          <h2>SCIENCE TOONS</h2>
-          <h4>
-            This is an event where the participants should create cartoons or
-            memes such that they also convey some scientific information with
-            the help of memes/cartoons.
-          </h4>
+          <section>
+            <h2>SCIENCE TOONS</h2>
+            <h4>
+              This is an event where the participants should create cartoons or
+              memes such that they also convey some scientific information with
+              the help of memes/cartoons.
+            </h4>
+          </section>
           <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
-          <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/scientoons' }) %>
+          <section>
+            <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/scientoons' }) %>
+            <%- include('../partials/competition/next-prev-buttons', {page: 4}) %>
+          </section>
         </div>
         <div class="number-pagination">
           <span>4</span>
@@ -163,16 +197,20 @@
       <div class="slider slide-5" id="s5">
         <img src="./assets/competition/img/maths olympiad.png" alt="" />
         <div class="slider-content">
-          <h2>MATHS OLYMPIAD</h2>
-          <h4>
-            It is a competition where an individual can explore the eternal
-            beauty of mathematics. It consist of 2 Rounds Where students are
-            awarded on the basis of their ability of mathematical application,
-            aptitude, and logical reasoning skills.
-          </h4>
+          <section>
+            <h2>MATHS OLYMPIAD</h2>
+            <h4>
+              It is a competition where an individual can explore the eternal
+              beauty of mathematics. It consist of 2 Rounds Where students are
+              awarded on the basis of their ability of mathematical application,
+              aptitude, and logical reasoning skills.
+            </h4>
+          </section>
           <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
-          <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/mathsolympiad' }) %>
-
+          <section>
+            <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/mathsolympiad' }) %>
+            <%- include('../partials/competition/next-prev-buttons', {page: 5}) %>
+          </section>
         </div>
         <div class="number-pagination">
           <span>5</span>
@@ -183,14 +221,19 @@
       <div class="slider slide-6" id="s6">
         <img src="assets/competition/img/archimedes dunk.png" alt="" />
         <div class="slider-content">
-          <h2>ARCHIMEDES DUNK</h2>
-          <h4>
-            Any structure made of cement ( of different compositions) should be
-            within 1 square feet in top view and able to float on water, will be
-            examined during fest.
-          </h4>
+          <section>
+            <h2>ARCHIMEDES DUNK</h2>
+            <h4>
+              Any structure made of cement ( of different compositions) should be
+              within 1 square feet in top view and able to float on water, will be
+              examined during fest.
+            </h4>
+          </section>
           <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
-          <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/archimedesdunk' }) %>
+          <section>
+            <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/archimedesdunk' }) %>
+            <%- include('../partials/competition/next-prev-buttons', {page: 6}) %>
+          </section>
 
         </div>
         <div class="number-pagination">
@@ -202,13 +245,18 @@
       <div class="slider slide-7" id="s7">
         <img src="assets/competition/img/quizzare.png" alt="" />
         <div class="slider-content">
-          <h2>QUIZZARE</h2>
-          <h4>
-            It is conducted in two rounds. They can participate individually or
-            in teams of 2.
-          </h4>
+          <section>
+            <h2>QUIZZARE</h2>
+            <h4>
+              It is conducted in two rounds. They can participate individually or
+              in teams of 2.
+            </h4>
+          </section>
           <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
-          <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/quizzaire' }) %>
+          <section>
+            <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/quizzaire' }) %>
+            <%- include('../partials/competition/next-prev-buttons', {page: 7}) %>
+          </section>
         </div>
         <div class="number-pagination">
           <span>7</span>
@@ -219,14 +267,19 @@
       <div class="slider slide-8" id="s8">
         <img src="assets/competition/img/mechanical colloquia.png" alt="" />
         <div class="slider-content">
-          <h2>MECHANICAL COLLOQUIA</h2>
-          <h4>
-            Participants need to make a PowerPoint Presentation manifesting
-            their innovative ideas based on topic of interest from the list of
-            domains.
-          </h4>
+          <section>
+            <h2>MECHANICAL COLLOQUIA</h2>
+            <h4>
+              Participants need to make a PowerPoint Presentation manifesting
+              their innovative ideas based on topic of interest from the list of
+              domains.
+            </h4>
+          </section>
           <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
-          <%- include('../partials/button' , {link: 'https://payments.cashfree.com/forms/mechco' }) %>
+          <section>
+            <%- include('../partials/button' , {link: 'https://payments.cashfree.com/forms/mechco' }) %>
+            <%- include('../partials/competition/next-prev-buttons', {page: 8}) %>
+          </section>
 
         </div>
         <div class="number-pagination">
@@ -238,14 +291,19 @@
       <div class="slider slide-9" id="s9">
         <img src="assets/competition/img/memory challenge.png" alt="" />
         <div class="slider-content">
-          <h2>MEMORY CHALLENGE</h2>
-          <h4>
-            Sequence of pics(eg: shape of polygon, number, place, object) will
-            be displayed and participants are asked to number them in order at
-            the end, based on the ability of remembering winners will be decided
-          </h4>
+          <section>
+            <h2>MEMORY CHALLENGE</h2>
+            <h4>
+              Sequence of pics(eg: shape of polygon, number, place, object) will
+              be displayed and participants are asked to number them in order at
+              the end, based on the ability of remembering winners will be decided
+            </h4>
+          </section>
           <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
-          <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/memorychallenge' }) %>
+          <section>
+            <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/memorychallenge' }) %>
+            <%- include('../partials/competition/next-prev-buttons', {page: 9}) %>
+          </section>
 
         </div>
         <div class="number-pagination">
@@ -257,14 +315,19 @@
       <div class="slider slide-10" id="s10">
         <img src="assets/competition/img/Blind coding.png" alt="" />
         <div class="slider-content">
-          <h2>BLIND CODE</h2>
-          <h4>
-            It will be a coding competition in which participants will have to
-            solve a coding challenge but they will not be able to see the
-            computer screen. Hence it will also judge their typing skills
-          </h4>
+          <section>
+            <h2>BLIND CODE</h2>
+            <h4>
+              It will be a coding competition in which participants will have to
+              solve a coding challenge but they will not be able to see the
+              computer screen. Hence it will also judge their typing skills
+            </h4>
+          </section>
           <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
-          <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/blindcode' }) %>
+          <section>
+            <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/blindcode' }) %>
+            <%- include('../partials/competition/next-prev-buttons', {page: 10}) %>
+          </section>
 
         </div>
         <div class="number-pagination">
@@ -276,14 +339,19 @@
       <div class="slider slide-11" id="s11">
         <img src="assets/competition/img/computer cypher.png" alt="" />
         <div class="slider-content">
-          <h2>COUNTER CYPHER</h2>
-          <h4>
-            It will be a coding competition. Participants will be given inputs
-            and corresponding outputs and they need to come up with a working
-            code which can produce the correct outputs.
-          </h4>
+          <section>
+            <h2>COUNTER CYPHER</h2>
+            <h4>
+              It will be a coding competition. Participants will be given inputs
+              and corresponding outputs and they need to come up with a working
+              code which can produce the correct outputs.
+            </h4>
+          </section>
           <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
-          <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/countercypher' }) %>
+          <section>
+            <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/countercypher' }) %>
+            <%- include('../partials/competition/next-prev-buttons', {page: 11}) %>
+          </section>
 
         </div>
         <div class="number-pagination">
@@ -295,16 +363,21 @@
       <div class="slider slide-12" id="s12">
         <img src="assets/competition/img/electrical colloqui.png" alt="" />
         <div class="slider-content">
-          <h2>COLLOQUIA ELECTRICAL</h2>
-          <h4>
-            So here we present you an opportunity to manifest your ideas..
-            colloquia, the powerpoint presentation event of Wissenaire'23 .It
-            consists of 2 rounds .In 1st round participants(Team) need to
-            present a ppt for 12min and followed by 3min queries on the domains
-            given.After this 2nd round will be held to well performed teams
-          </h4>
+          <section>
+            <h2>COLLOQUIA ELECTRICAL</h2>
+            <h4>
+              So here we present you an opportunity to manifest your ideas..
+              colloquia, the powerpoint presentation event of Wissenaire'23 .It
+              consists of 2 rounds .In 1st round participants(Team) need to
+              present a ppt for 12min and followed by 3min queries on the domains
+              given.After this 2nd round will be held to well performed teams
+            </h4>
+          </section>
           <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
-          <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/eecolloquia' }) %>
+          <section>
+            <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/eecolloquia' }) %>
+            <%- include('../partials/competition/next-prev-buttons', {page: 12}) %>
+          </section>
 
         </div>
         <div class="number-pagination">
@@ -316,15 +389,20 @@
       <div class="slider slide-13" id="s13">
         <img src="assets/competition/img/civil colloquia.png" alt="" />
         <div class="slider-content">
-          <h2>COLLOQUIA CIVIL</h2>
-          <h4>
-            It is an event of 2 rounds in which participants have to prepare
-            powerpoint presentation on based on topic of interest from given
-            list of domains (civil topics) and present it for 12min followed by
-            3min of queries.
-          </h4>
+          <section>
+            <h2>COLLOQUIA CIVIL</h2>
+            <h4>
+              It is an event of 2 rounds in which participants have to prepare
+              powerpoint presentation on based on topic of interest from given
+              list of domains (civil topics) and present it for 12min followed by
+              3min of queries.
+            </h4>
+          </section>
           <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
-          <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/civilc' }) %>
+          <section>
+            <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/civilc' }) %>
+            <%- include('../partials/competition/next-prev-buttons', {page: 13}) %>
+          </section>
 
         </div>
         <div class="number-pagination">
@@ -336,14 +414,19 @@
       <div class="slider slide-14" id="s14">
         <img src="assets/competition/img/Auction Wars.png" alt="" />
         <div class="slider-content">
-          <h2>AUCTION WARS</h2>
-          <h4>
-            It is a competition for teams. Round 1 consists of basic questions
-            on theme of the auction answering which the Teams qualify for round
-            2. Round 2 is a bidding war between the teams based on the theme of
-            auction.
-          </h4>
+          <section>
+            <h2>AUCTION WARS</h2>
+            <h4>
+              It is a competition for teams. Round 1 consists of basic questions
+              on theme of the auction answering which the Teams qualify for round
+              2. Round 2 is a bidding war between the teams based on the theme of
+              auction.
+            </h4>
+          </section>
           <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
+          <section>
+            <%- include('../partials/competition/next-prev-buttons', {page: 14}) %>
+          </section>
 
         </div>
         <div class="number-pagination">
@@ -355,15 +438,20 @@
       <div class="slider slide-15" id="s15">
         <img src="assets/competition/img/Analysis Aces.png" alt="" />
         <div class="slider-content">
-          <h2>ANALYSIS ACES</h2>
-          <h4>
-            it is a competition where participants in teams will be handed out
-            data in some fields which have to analysed by them and come up with
-            the conclusion or solution. It is competition stressing on data
-            science and finance.
-          </h4>
+          <section>
+            <h2>ANALYSIS ACES</h2>
+            <h4>
+              it is a competition where participants in teams will be handed out
+              data in some fields which have to analysed by them and come up with
+              the conclusion or solution. It is competition stressing on data
+              science and finance.
+            </h4>
+          </section>
           <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
-          <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/analysisaces' }) %>
+          <section>
+            <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/analysisaces' }) %>
+            <%- include('../partials/competition/next-prev-buttons', {page: 15}) %>
+          </section>
 
         </div>
         <div class="number-pagination">
@@ -375,14 +463,19 @@
       <div class="slider slide-16" id="s16">
         <img src="assets/competition/img/call of duty.png" alt="" />
         <div class="slider-content">
-          <h2>CALL OF DUTY</h2>
-          <h4>
-            This is an event where the participants should create cartoons or
-            memes such that they also convey some scientific information with
-            the help of memes/cartoons.
-          </h4>
+          <section>
+            <h2>CALL OF DUTY</h2>
+            <h4>
+              This is an event where the participants should create cartoons or
+              memes such that they also convey some scientific information with
+              the help of memes/cartoons.
+            </h4>
+          </section>
           <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
-          <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/callofdutymobile' }) %>
+          <section>
+            <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/callofdutymobile' }) %>
+            <%- include('../partials/competition/next-prev-buttons', {page: 16}) %>
+          </section>
 
         </div>
         <div class="number-pagination">
@@ -394,15 +487,20 @@
       <div class="slider slide-17" id="s17">
         <img src="assets/competition/img/Counterstrike.png" alt="" />
         <div class="slider-content">
-          <h2>COUNTER-STRIKE</h2>
-          <h4>
-            Global Offensive (CS:GO) is a multiplayer tactical first-person
-            shooter game. Two opposing teams, the Terrorists and the
-            Counter-Terrorists, compete in game modes to repeatedly complete
-            objectives.
-          </h4>
+          <section>
+            <h2>COUNTER-STRIKE</h2>
+            <h4>
+              Global Offensive (CS:GO) is a multiplayer tactical first-person
+              shooter game. Two opposing teams, the Terrorists and the
+              Counter-Terrorists, compete in game modes to repeatedly complete
+              objectives.
+            </h4>
+          </section>
           <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
-          <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/csgo' }) %>
+          <section>
+            <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/csgo' }) %>
+            <%- include('../partials/competition/next-prev-buttons', {page: 17}) %>
+          </section>
         </div>
         <div class="number-pagination">
           <span>17</span>
@@ -462,23 +560,7 @@
         }
       </script>
       <script src="assets/competition/js/scrolling.js"></script>
-      <script src="assets/competition/js/touchScroll/ts1.js"></script>
-      <script src="assets/competition/js/touchScroll/ts2.js"></script>
-      <script src="assets/competition/js/touchScroll/ts3.js"></script>
-      <script src="assets/competition/js/touchScroll/ts4.js"></script>
-      <script src="assets/competition/js/touchScroll/ts5.js"></script>
-      <script src="assets/competition/js/touchScroll/ts6.js"></script>
-      <script src="assets/competition/js/touchScroll/ts7.js"></script>
-      <script src="assets/competition/js/touchScroll/ts8.js"></script>
-      <script src="assets/competition/js/touchScroll/ts9.js"></script>
-      <script src="assets/competition/js/touchScroll/ts10.js"></script>
-      <script src="assets/competition/js/touchScroll/ts11.js"></script>
-      <script src="assets/competition/js/touchScroll/ts12.js"></script>
-      <script src="assets/competition/js/touchScroll/ts13.js"></script>
-      <script src="assets/competition/js/touchScroll/ts14.js"></script>
-      <script src="assets/competition/js/touchScroll/ts15.js"></script>
-      <script src="assets/competition/js/touchScroll/ts16.js"></script>
-      <script src="assets/competition/js/touchScroll/ts17.js"></script>
+      <script src="/js/competition/next-prev-buttons.js"></script>
   </body>
 
 </html>
