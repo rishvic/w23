@@ -127,6 +127,22 @@ body *:after {
   color: #dfac47;
   outline: 0;
 }
+.intro-text-play2 {
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin: 30px auto 0;
+  color: #FFF;
+  background: rgba(85, 85, 85, 0.2);
+  opacity: 0.3;
+}
+
+.intro-text-play2:hover,
+.intro-text-play2:focus,
+.intro-text-play2:active {
+  color: #dfac47;
+  outline: 0;
+}
 
 .viewport {
   height: 100vh;
