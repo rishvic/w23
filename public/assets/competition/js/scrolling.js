@@ -184,3 +184,17 @@ document.getElementById("s17").addEventListener("wheel", (e) => {
     document.querySelector('input[class="slide-radio16"]').checked = true;
   }
 });
+
+const searchParams = new URLSearchParams(document.location.search);
+if (searchParams.has("page")) {
+  const pageStr = searchParams.get("page");
+  if (validator.isInt(pageStr, {
+    min: 1,
+    max: 17,
+    allow_leading_zeroes: false
+  })) {
+    const pageNum = Number.parseInt(pageStr);
+    document.querySelector('input[class="slide-radio1"]').checked = false;
+    document.querySelector(`input[class="slide-radio${pageNum}"]`).checked = true;
+  }
+}
