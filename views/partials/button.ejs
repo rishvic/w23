@@ -20,11 +20,11 @@
           </button>
           <%}%>
     </div>
-    <!-- <div class="btn-item">
-      <button class="button">
-        KNOW MORE
-        <div class="button__horizontal"></div>
-        <div class="button__vertical"></div>
+    <% if (pdfLink) { %>
+    <div class="btn-item">
+      <button class="button" role="link" onclick="window.location.href='<%= pdfLink %>';">
+        <b>KNOW MORE</b>
       </button>
-    </div> -->
+    </div>
+    <% } %>
 </div>
