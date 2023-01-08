@@ -18,9 +18,12 @@
     <link rel="stylesheet" type="text/css" href="css/cursor.css" />
     <script src="js/cursor.js" defer></script>
 </head>
+<style>
+    .grayscale-100 {
+    }
+</style>
 
-<body class="box custom-cursor">
-    <div id="cursor_follower"></div>
+<body class="box custom-cursor grayscale-100">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
@@ -40,18 +43,13 @@
         <main class="text-light container">
             <section id="landing" class="row align-items-center">
                 <section id="tagline" class="col-md-8">
-                    <div class="wrapper">
-                        <span data-text="Aeternum"></span><span data-text="Reis"></span>
+                    <div class="wrapper" style="text-transform: uppercase;">
+                        <span data-text="Aeternum"></span><span style="margin-top: 120px;" data-text="Reis"></span>
                     </div>
                 </section>
                 <section id="globe" class="col-md-4"></section>
                 <div class="container text-center gy-5">
                     <div class="row">
-                        <div class="col">
-                            <a href="/about"><button style="margin-bottom: 10px;" class="btnKnow">
-                                    Click To Know More
-                                </button></a>
-                        </div>
                         <%if(!participant) {%>
                             <div class="col">
                                 <a href="/auth/google"><button style="margin-bottom: 10px;"

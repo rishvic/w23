@@ -21,9 +21,11 @@ html {
 
 .header-text {
   color: white;
-  font-size: 2.5rem;
+  font-size: 8vw !important;
   font-weight: bold;
   text-align: center;
+  font-family: The Blast;
+  src: url("../assets/fonts/The\ Blast.otf") format("opentype");
 }
 
 body {
@@ -85,7 +87,7 @@ body {
 
 .inside-page__heading--ethical,
 .card-front__text-view--ethical {
-  
+
   color: #616161;
 }
 
@@ -456,7 +458,9 @@ body {
 
 @media only screen and (max-width: 1200px) and (min-width: 776px) {
 
-  html{font-size: 100%;}
+  html {
+    font-size: 100%;
+  }
 
   .card-area {
     width: 100vw;
@@ -492,7 +496,9 @@ body {
 }
 
 @media only screen and (max-width: 776px) and (min-width: 616px) {
-  html{font-size: 100%;}
+  html {
+    font-size: 100%;
+  }
 
   .card-area {
     width: 100vw;
@@ -528,13 +534,15 @@ body {
 }
 
 @media only screen and (max-width: 616px) {
-  html{font-size: 100%;}
+  html {
+    font-size: 100%;
+  }
 
   .card-area {
     width: 100vw;
     padding: 0 10vw 0 10vw;
     /* flex-direction: column; */
-    
+
 
   }
 

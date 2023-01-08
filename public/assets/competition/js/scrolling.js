@@ -184,6 +184,40 @@ document.getElementById("s17").addEventListener("wheel", (e) => {
     document.querySelector('input[class="slide-radio16"]').checked = true;
   }
 });
+ 
+/* Slide-18 */
+document.getElementById("s18").addEventListener("wheel", (e) => {
+  document.querySelector('input[class="slide-radio18"]').checked = false;
+  if (e.deltaY > 0 || e.deltaX > 0) {
+    document.querySelector('input[class="slide-radio18"]').checked = true;
+  } else {
+    document.querySelector('input[class="slide-radio17"]').checked = true;
+  }
+});
+document.getElementById("s19").addEventListener("wheel", (e) => {
+  document.querySelector('input[class="slide-radio19"]').checked = false;
+  if (e.deltaY > 0 || e.deltaX > 0) {
+    document.querySelector('input[class="slide-radio19"]').checked = true;
+  } else {
+    document.querySelector('input[class="slide-radio18"]').checked = true;
+  }
+});
+document.getElementById("s20").addEventListener("wheel", (e) => {
+  document.querySelector('input[class="slide-radio20"]').checked = false;
+  if (e.deltaY > 0 || e.deltaX > 0) {
+    document.querySelector('input[class="slide-radio20"]').checked = true;
+  } else {
+    document.querySelector('input[class="slide-radio19"]').checked = true;
+  }
+});
+document.getElementById("s21").addEventListener("wheel", (e) => {
+  document.querySelector('input[class="slide-radio21"]').checked = false;
+  if (e.deltaY > 0 || e.deltaX > 0) {
+    document.querySelector('input[class="slide-radio21"]').checked = true;
+  } else {
+    document.querySelector('input[class="slide-radio20"]').checked = true;
+  }
+});
 
 const searchParams = new URLSearchParams(document.location.search);
 if (searchParams.has("page")) {

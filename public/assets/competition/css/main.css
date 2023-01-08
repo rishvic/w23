@@ -96,8 +96,8 @@
   align-items: center;
   justify-content: center;
   align-content: center;
-  -webkit-transition: -webkit-transform 1600ms;
-  transition: -webkit-transform 1600ms, transform 1600ms;
+  -webkit-transition: -webkit-transform 800ms;
+  transition: -webkit-transform 800ms, transform 800ms;
   -webkit-transform: scale(1);
   transform: scale(1);
 }

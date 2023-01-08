@@ -173,7 +173,7 @@ section {
   opacity: 0;
   right: 15px;
   bottom: 15px;
-  z-index: 99999;
+  z-index: 999;
   background: var(--color-primary);
   width: 40px;
   height: 40px;
@@ -203,7 +203,7 @@ section {
 #preloader {
   position: fixed;
   inset: 0;
-  z-index: 999999;
+  z-index: 999;
   overflow: hidden;
   background: #fff;
   transition: all 0.6s ease-out;
