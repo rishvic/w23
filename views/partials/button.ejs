@@ -1,30 +1,34 @@
 <div class="btn-grp">
   <div class="btn-item">
-      <%if(!participant) {%>
-      <button class="button"  onclick="redirectToLogin()">
-        REGISTER
-        <div class="button__horizontal"></div>
-        <div class="button__vertical"></div>
-      </button>
-      <%} else if(!participant.phoneNumber){%>
-        <button class="button"  onclick="redirectToProfile()">
-          REGISTER
-          <div class="button__horizontal"></div>
-          <div class="button__vertical"></div>
-        </button>
-        <%} else {%>
-          <button class="button"  onclick="continueToBooking('<%= link%>')">
-            REGISTER
-            <div class="button__horizontal"></div>
-            <div class="button__vertical"></div>
-          </button>
-          <%}%>
-    </div>
-    <% if (pdfLink) { %>
-    <div class="btn-item">
-      <button class="button" role="link" onclick="window.location.href='<%= pdfLink %>';">
-        <b>KNOW MORE</b>
-      </button>
-    </div>
-    <% } %>
+    <%if(!participant) {%>
+    <button class="button" onclick="redirectToLogin()">
+      REGISTER
+      <div class="button__horizontal"></div>
+      <div class="button__vertical"></div>
+    </button>
+    <%} else if(!participant.phoneNumber){%>
+    <button class="button" onclick="redirectToProfile()">
+      REGISTER
+      <div class="button__horizontal"></div>
+      <div class="button__vertical"></div>
+    </button>
+    <%} else {%>
+    <button class="button" onclick="continueToBooking('<%= link%>')">
+      REGISTER
+      <div class="button__horizontal"></div>
+      <div class="button__vertical"></div>
+    </button>
+    <%}%>
+  </div>
+  <% if (pdfLink) { %>
+  <div class="btn-item">
+    <button
+      class="button"
+      role="link"
+      onclick="window.location.href='<%= pdfLink %>';"
+    >
+      <b>KNOW MORE</b>
+    </button>
+  </div>
+  <% } %>
 </div>

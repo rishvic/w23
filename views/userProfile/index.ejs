@@ -121,7 +121,7 @@
                   <div class="row">
                     <div class="col-lg-6">
                       <div class="form-group focused">
-                        <label class="form-control-label" for="input-username">Institute Name</label>
+                        <label class="form-control-label" for="input-username">Institute Name<b style="color: red;">*</b></label>
                         <% if (participant.institute ) { %>
                         <input type="text" id="input-username" class="form-control form-control-alternative" value="<%=participant.institute%>" name = "institute" required>
                         <%} else {%>
@@ -131,7 +131,7 @@
                     </div>
                     <div class="col-lg-6">
                       <div class="form-group">
-                        <label class="form-control-label" for="input-email">Branch</label>
+                        <label class="form-control-label" for="input-email">Branch<b style="color: red;">*</b></label>
                         <% if (participant.branch ) { %>
                         <input type="email" id="input-email" class="form-control form-control-alternative" value="<%= participant.branch%>"  name = "branch" required>
                         <%} else {%>
@@ -143,7 +143,7 @@
                   <div class="row">
                     <div class="col-lg-6">
                       <div class="form-group focused">
-                        <label class="form-control-label" for="input-first-name">Year</label>
+                        <label class="form-control-label" for="input-first-name">Year<b style="color: red;">*</b></label>
                         <% if (participant.year ) { %>
                         <input type="text" id="input-first-name" class="form-control form-control-alternative" value="<%= participant.year %>" name = "year" required>
                         <%} else {%>
@@ -153,7 +153,7 @@
                     </div>
                     <div class="col-lg-6">
                       <div class="form-group focused">
-                        <label class="form-control-label" for="input-last-name">City</label>
+                        <label class="form-control-label" for="input-last-name">City<b style="color: red;">*</b></label>
                         <% if (participant.city ) { %>
                         <input type="text" id="input-last-name" class="form-control form-control-alternative" value="<%= participant.city%>" name = "city" required>
                           <%} else {%>
@@ -170,7 +170,7 @@
                   <div class="row">
                     <div class="col-md-12">
                       <div class="form-group focused">
-                        <label class="form-control-label" for="input-address">Phone Number</label>
+                        <label class="form-control-label" for="input-address">Phone Number<b style="color: red;">*</b></label>
                         <% if (participant.phoneNumber ) { %>
                         <input id="input-address" class="form-control form-control-alternative" value="<%= participant.phoneNumber%>" name = "phoneNumber" type="text" required>
                         <%} else {%>
@@ -193,8 +193,12 @@
                   </div>
                 </div>
                 <hr class="my-4">
-                <div class="col-lg-7 col-md-10">
+                <div class="">
+                  <% if (!participant.phoneNumber ) { %>
                   <a id="submitBtn" class="btn btn-info">Submit</a>
+                  <%} else {%>
+                  <a id="submitBtn" class="btn btn-info">Edit</a>
+                  <% }%>
                 </div>
               </form>
             </div>

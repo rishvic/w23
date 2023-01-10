@@ -1,71 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/competition/css/main.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/cursor.css" />
+    <script src="js/cursor.js" defer></script>
+    <title>Wissenaire'23 | Competitions</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" type="text/css" href="assets/competition/css/main.css" />
-  <link rel="stylesheet" type="text/css" href="css/cursor.css" />
-  <script src="js/cursor.js" defer></script>
-  <title>Wissenaire'23 | Competitions</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.2.min.js"
+      integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA="
+      crossorigin="anonymous"
+    ></script>
 
-  <script src="https://code.jquery.com/jquery-3.6.2.min.js"
-    integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+    <link href="assets/workshop/img/favicon.png" rel="icon" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Oswald"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,500,800"
+      rel="stylesheet"
+    />
 
-  <link href="assets/workshop/img/favicon.png" rel="icon" />
-  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,800" rel="stylesheet" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+      body {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        font-family: "Montserrat", sans-serif;
+      }
 
-    body {
-      overflow: hidden;
-      width: 100%;
-      height: 100%;
-      padding: 0;
-      margin: 0;
-      font-family: "Montserrat", sans-serif;
-    }
+      .btn-grp {
+        display: flex;
+        flex-direction: row;
+      }
 
-    .btn-grp {
-      display: flex;
-      flex-direction: row;
-    }
+      .btn-item {
+        margin-right: 35px;
+      }
 
-    .btn-item {
-      margin-right: 35px;
-    }
+      .next-prev-grp {
+        display: flex;
+        flex-direction: row;
+        /* margin-bottom: -50px; */
+        margin-top: 120px;
+      }
 
-    .next-prev-grp {
-      display: flex;
-      flex-direction: row;
-      justify-content: right;
-      margin-bottom: 40px;
-    }
+      @media screen and (min-width: 770px) {
+        .next-prev-grp {
+          display: none;
+        }
+      }
 
-    .next-prev-item {
-      margin-left: 35px;
-    }
+      .next-prev-item {
+        margin-left: 35px;
+      }
 
-    .next-prev-item .button {
-      padding: 0.5em 0.5em;
-    }
-  </style>
-</head>
+      .next-prev-item .button {
+        padding: 0.5em 0.5em;
+      }
+    </style>
+  </head>
 
-
-
-<body class="box custom-cursor">
-
-  <%- include('../partials/navBar.ejs') %>
+  <body class="box custom-cursor">
+    <%- include('../partials/navBar.ejs') %>
     <!-- Slider Wrapper -->
     <div class="css-slider-wrapper" id="ss">
-
-      <input type="radio" name="slider" class="slide-radio1" checked id="slider_1" />
+      <input
+        type="radio"
+        name="slider"
+        class="slide-radio1"
+        checked
+        id="slider_1"
+      />
       <input type="radio" name="slider" class="slide-radio2" id="slider_2" />
       <input type="radio" name="slider" class="slide-radio3" id="slider_3" />
       <input type="radio" name="slider" class="slide-radio4" id="slider_4" />
@@ -111,18 +132,20 @@
           <section>
             <h2>SCHOOL CHAMP</h2>
             <h4>
-              “Education is not learning of facts but training the mind to think”
-              Wissenaire’23 provides an eminent platform to all the young minds out there brimming with enthusiasm. With
-              the prime motive of nurturing cognitive skills and wide exposure to school students, here comes the School
-              Champ with its 4 rounds. Grab this opportunity bestowed on you!!
-
+              “Education is not learning of facts but training the mind to
+              think” Wissenaire’23 provides an eminent platform to all the young
+              minds out there brimming with enthusiasm. With the prime motive of
+              nurturing cognitive skills and wide exposure to school students,
+              here comes the School Champ with its 4 rounds. Grab this
+              opportunity bestowed on you!!
             </h4>
           </section>
           <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
           <section>
-            <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/schoolchamp' ,
-              pdfLink: '/assets/pdf/competition/SchoolChamp.pdf' }) %>
-              <%- include('../partials/competition/next-prev-buttons', {page: 1}) %>
+            <%- include('../partials/button', {link:
+            'https://payments.cashfree.com/forms/schoolchamp' , pdfLink:
+            '/assets/pdf/competition/SchoolChamp.pdf' }) %> <%-
+            include('../partials/competition/next-prev-buttons', {page: 1}) %>
           </section>
         </div>
         <div class="number-pagination">
@@ -137,21 +160,23 @@
           <section>
             <h2>TRUSS THE FRAME</h2>
             <h4>
-              “Everything begins with an idea” – Earl Nightingale.
-              Wissenaire provides you the greatest platform to express your innovative ideas. A truss is an assembly of
-              members such as beams, connected by nodes, that creates a rigid structure. In engineering, a structural
-              member is usually fabricated from straight pieces of metal or timber to form a series of triangles lying
-              in a single plane. In this participant have to build a truss bridge with the material provided.
-
+              “Everything begins with an idea” – Earl Nightingale. Wissenaire
+              provides you the greatest platform to express your innovative
+              ideas. A truss is an assembly of members such as beams, connected
+              by nodes, that creates a rigid structure. In engineering, a
+              structural member is usually fabricated from straight pieces of
+              metal or timber to form a series of triangles lying in a single
+              plane. In this participant have to build a truss bridge with the
+              material provided.
             </h4>
           </section>
           <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
           <section>
-            <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/trusstheframe' ,
-              pdfLink: '/assets/pdf/competition/TrussTheFrame.pdf' }) %>
-              <%- include('../partials/competition/next-prev-buttons', {page: 2}) %>
+            <%- include('../partials/button', {link:
+            'https://payments.cashfree.com/forms/trusstheframe' , pdfLink:
+            '/assets/pdf/competition/TrussTheFrame.pdf' }) %> <%-
+            include('../partials/competition/next-prev-buttons', {page: 2}) %>
           </section>
-
         </div>
         <div class="number-pagination">
           <span>2</span>
@@ -165,16 +190,17 @@
           <section>
             <h2>SHUTTER</h2>
             <h4>
-              Have you ever captured a good photo…?
-              “A good snapshot keeps a moment from running away”. - Eudora Welty
-              Wissenaire’23 provides all the photographers out there a platform to prove themselves.
+              Have you ever captured a good photo…? “A good snapshot keeps a
+              moment from running away”. - Eudora Welty Wissenaire’23 provides
+              all the photographers out there a platform to prove themselves.
             </h4>
           </section>
           <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
           <section>
-            <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/shutter' ,
-              pdfLink: '/assets/pdf/competition/Shutter.pdf' }) %>
-              <%- include('../partials/competition/next-prev-buttons', {page: 3}) %>
+            <%- include('../partials/button', {link:
+            'https://payments.cashfree.com/forms/shutter' , pdfLink:
+            '/assets/pdf/competition/Shutter.pdf' }) %> <%-
+            include('../partials/competition/next-prev-buttons', {page: 3}) %>
           </section>
         </div>
         <div class="number-pagination">
@@ -189,18 +215,19 @@
           <section>
             <h2>SCIENTOONS</h2>
             <h4>
-              Do you want to express your scientific knowledge in the form of cartoons? Excited! Then you have come to
-              the right place.
-              Nowadays in social media the “MEMES” are very popular. Here you can show some creativity. Scientoons are
-              cartoons/memes that provide scientific knowledge in a humorous way.
-
+              Do you want to express your scientific knowledge in the form of
+              cartoons? Excited! Then you have come to the right place. Nowadays
+              in social media the “MEMES” are very popular. Here you can show
+              some creativity. Scientoons are cartoons/memes that provide
+              scientific knowledge in a humorous way.
             </h4>
           </section>
           <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
           <section>
-            <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/scientoons' ,
-              pdfLink: '/assets/pdf/competition/Scientoons.pdf' }) %>
-              <%- include('../partials/competition/next-prev-buttons', {page: 4}) %>
+            <%- include('../partials/button', {link:
+            'https://payments.cashfree.com/forms/scientoons' , pdfLink:
+            '/assets/pdf/competition/Scientoons.pdf' }) %> <%-
+            include('../partials/competition/next-prev-buttons', {page: 4}) %>
           </section>
         </div>
         <div class="number-pagination">
@@ -215,20 +242,22 @@
           <section>
             <h2>MATHS OLYMPIAD</h2>
             <h4>
-              “Mathematics is not a careful march down a well cleared highway, but a strange wilderness, where explorers
-              often get lost. Rigour should be a signal to the historian that the maps have been made and the real
-              explorers have gone elsewhere”.
-              And here is your expedition, your maps are the ways in which you approach the solution which is the hidden
-              treasure. So, grab this opportunity of becoming the explorers you wanted to be by participating in this
-              “Maths Olympiad”.
-
+              “Mathematics is not a careful march down a well cleared highway,
+              but a strange wilderness, where explorers often get lost. Rigour
+              should be a signal to the historian that the maps have been made
+              and the real explorers have gone elsewhere”. And here is your
+              expedition, your maps are the ways in which you approach the
+              solution which is the hidden treasure. So, grab this opportunity
+              of becoming the explorers you wanted to be by participating in
+              this “Maths Olympiad”.
             </h4>
           </section>
           <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
           <section>
-            <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/mathsolympiad' ,
-              pdfLink: '/assets/pdf/competition/MathsOlympiad.pdf' }) %>
-              <%- include('../partials/competition/next-prev-buttons', {page: 5}) %>
+            <%- include('../partials/button', {link:
+            'https://payments.cashfree.com/forms/mathsolympiad' , pdfLink:
+            '/assets/pdf/competition/MathsOlympiad.pdf' }) %> <%-
+            include('../partials/competition/next-prev-buttons', {page: 5}) %>
           </section>
         </div>
         <div class="number-pagination">
@@ -243,21 +272,22 @@
           <section>
             <h2>ARCHIMEDES DUNK</h2>
             <h4>
-              “Any object immersed in a fluid is acted upon by an upward, or buoyant force equal to the weight of the
-              fluid displaced by the object”. ~ Archimedes principle.
-              We welcome all civil engineering enthusiasts to “Archimedes Dunk”. Participants in this competition get
-              the chance to use their civil engineering knowledge and skills in real-world situations. The capacity to
-              create an object that can float on water is tested in this competition.
-
+              “Any object immersed in a fluid is acted upon by an upward, or
+              buoyant force equal to the weight of the fluid displaced by the
+              object”. ~ Archimedes principle. We welcome all civil engineering
+              enthusiasts to “Archimedes Dunk”. Participants in this competition
+              get the chance to use their civil engineering knowledge and skills
+              in real-world situations. The capacity to create an object that
+              can float on water is tested in this competition.
             </h4>
           </section>
           <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
           <section>
-            <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/archimedesdunk' ,
-              pdfLink: '/assets/pdf/competition/ArchimedesDunk.pdf' }) %>
-              <%- include('../partials/competition/next-prev-buttons', {page: 6}) %>
+            <%- include('../partials/button', {link:
+            'https://payments.cashfree.com/forms/archimedesdunk' , pdfLink:
+            '/assets/pdf/competition/ArchimedesDunk.pdf' }) %> <%-
+            include('../partials/competition/next-prev-buttons', {page: 6}) %>
           </section>
-
         </div>
         <div class="number-pagination">
           <span>6</span>
@@ -272,16 +302,17 @@
             <h2>QUIZZARE</h2>
             <h4>
               Are you someone looking for a bit of quizzing to make your day!
-              Well Wissenaire'23 presents you Quizzaire with different rounds on various technical domains!!! Hold on
-              and get ready to dive in the world of quizzing!!!
-
+              Well Wissenaire'23 presents you Quizzaire with different rounds on
+              various technical domains!!! Hold on and get ready to dive in the
+              world of quizzing!!!
             </h4>
           </section>
           <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
           <section>
-            <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/quizzaire' ,
-              pdfLink: '/assets/pdf/competition/Quizzaire.pdf' }) %>
-              <%- include('../partials/competition/next-prev-buttons', {page: 7}) %>
+            <%- include('../partials/button', {link:
+            'https://payments.cashfree.com/forms/quizzaire' , pdfLink:
+            '/assets/pdf/competition/Quizzaire.pdf' }) %> <%-
+            include('../partials/competition/next-prev-buttons', {page: 7}) %>
           </section>
         </div>
         <div class="number-pagination">
@@ -296,18 +327,18 @@
           <section>
             <h2>MECHANICAL COLLOQUIA</h2>
             <h4>
-              “Mechanical Engineers are the movers of the world” .
-              We welcome all the mechanical engineers out there to come show us what you got with your presentation
-              skills.
-              domains.
+              “Mechanical Engineers are the movers of the world” . We welcome
+              all the mechanical engineers out there to come show us what you
+              got with your presentation skills. domains.
             </h4>
           </section>
           <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
           <section>
-            <%- include('../partials/button' , {link: 'https://payments.cashfree.com/forms/mechco' , pdfLink: null }) %>
-              <%- include('../partials/competition/next-prev-buttons', {page: 8}) %>
+            <%- include('../partials/button' , {link:
+            'https://payments.cashfree.com/forms/mechco' , pdfLink: null }) %>
+            <%- include('../partials/competition/next-prev-buttons', {page: 8})
+            %>
           </section>
-
         </div>
         <div class="number-pagination">
           <span>8</span>
@@ -321,21 +352,22 @@
           <section>
             <h2>MEMORY CHALLENGE</h2>
             <h4>
-              A simple-to-use yet extremely effective tool for training and testing visual memory skills is Memory
-              Challenge!
-              It is beneficial for people of all ages and skill levels due to its introductory through intermediate
-              levels of complexity. This event helps the participants to memorize the things and discuss among the
-              team-mates to come up with the answer. All in all, this event would be great fun playing with friends.
-
+              A simple-to-use yet extremely effective tool for training and
+              testing visual memory skills is Memory Challenge! It is beneficial
+              for people of all ages and skill levels due to its introductory
+              through intermediate levels of complexity. This event helps the
+              participants to memorize the things and discuss among the
+              team-mates to come up with the answer. All in all, this event
+              would be great fun playing with friends.
             </h4>
           </section>
           <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
           <section>
-            <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/memorychallenge' ,
-              pdfLink: '/assets/pdf/competition/MemoryChallenge.pdf' }) %>
-              <%- include('../partials/competition/next-prev-buttons', {page: 9}) %>
+            <%- include('../partials/button', {link:
+            'https://payments.cashfree.com/forms/memorychallenge' , pdfLink:
+            '/assets/pdf/competition/MemoryChallenge.pdf' }) %> <%-
+            include('../partials/competition/next-prev-buttons', {page: 9}) %>
           </section>
-
         </div>
         <div class="number-pagination">
           <span>9</span>
@@ -349,19 +381,22 @@
           <section>
             <h2>BLIND CODE</h2>
             <h4>
-              Can you drive a car safely without seeing the road? Well, you might not if it's a car, but you may if it's
-              a code! You will be given a coding challenge and have to solve it, but wait! The monitor screen will not
-              be visible to you. So all you can do is trust your typing and memorization skills along your way to your
-              successful code completion. Usually, this is a terrible idea but it makes for a very fun challenge!
+              Can you drive a car safely without seeing the road? Well, you
+              might not if it's a car, but you may if it's a code! You will be
+              given a coding challenge and have to solve it, but wait! The
+              monitor screen will not be visible to you. So all you can do is
+              trust your typing and memorization skills along your way to your
+              successful code completion. Usually, this is a terrible idea but
+              it makes for a very fun challenge!
             </h4>
           </section>
           <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
           <section>
-            <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/blindcode' ,
-              pdfLink: '/assets/pdf/competition/BlindCode.pdf' }) %>
-              <%- include('../partials/competition/next-prev-buttons', {page: 10}) %>
+            <%- include('../partials/button', {link:
+            'https://payments.cashfree.com/forms/blindcode' , pdfLink:
+            '/assets/pdf/competition/BlindCode.pdf' }) %> <%-
+            include('../partials/competition/next-prev-buttons', {page: 10}) %>
           </section>
-
         </div>
         <div class="number-pagination">
           <span>10</span>
@@ -375,21 +410,22 @@
           <section>
             <h2>COUNTER CYPHER</h2>
             <h4>
-              You might have heard the quote: "Sometimes a wrong turn may take you to the right destination".
-              Here is your chance to get an experience with the unknown. We give you a set of inputs and their
-              corresponding outputs code with some hidden key, that you need to figure out with the behavior of the code
-              on your given inputs. The goal is to find that “Black box”, which can give correct outputs corresponding
-              to given inputs.
-
+              You might have heard the quote: "Sometimes a wrong turn may take
+              you to the right destination". Here is your chance to get an
+              experience with the unknown. We give you a set of inputs and their
+              corresponding outputs code with some hidden key, that you need to
+              figure out with the behavior of the code on your given inputs. The
+              goal is to find that “Black box”, which can give correct outputs
+              corresponding to given inputs.
             </h4>
           </section>
           <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
           <section>
-            <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/countercypher' ,
-              pdfLink: '/assets/pdf/competition/CounterCypher.pdf' }) %>
-              <%- include('../partials/competition/next-prev-buttons', {page: 11}) %>
+            <%- include('../partials/button', {link:
+            'https://payments.cashfree.com/forms/countercypher' , pdfLink:
+            '/assets/pdf/competition/CounterCypher.pdf' }) %> <%-
+            include('../partials/competition/next-prev-buttons', {page: 11}) %>
           </section>
-
         </div>
         <div class="number-pagination">
           <span>11</span>
@@ -403,18 +439,18 @@
           <section>
             <h2>COLLOQUIA ELECTRICAL</h2>
             <h4>
-              “Electrical engineers do it with greater frequency and less resistance”.
-              We welcome all the electrical engineers out there to come show us what you got with your presentation
-              skills.
+              “Electrical engineers do it with greater frequency and less
+              resistance”. We welcome all the electrical engineers out there to
+              come show us what you got with your presentation skills.
             </h4>
           </section>
           <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
           <section>
-            <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/eecolloquia' ,
-              pdfLink: '/assets/pdf/competition/ColloquiaEE.pdf' }) %>
-              <%- include('../partials/competition/next-prev-buttons', {page: 12}) %>
+            <%- include('../partials/button', {link:
+            'https://payments.cashfree.com/forms/eecolloquia' , pdfLink:
+            '/assets/pdf/competition/ColloquiaEE.pdf' }) %> <%-
+            include('../partials/competition/next-prev-buttons', {page: 12}) %>
           </section>
-
         </div>
         <div class="number-pagination">
           <span>12</span>
@@ -428,17 +464,18 @@
           <section>
             <h2>COLLOQUIA CIVIL</h2>
             <h4>
-              “The best creator next to God is a civil engineer” ~ Adarsh Kumar G.S.
-              We welcome all the civil engineers out there to come show us what you got with your presentation skills.
+              “The best creator next to God is a civil engineer” ~ Adarsh Kumar
+              G.S. We welcome all the civil engineers out there to come show us
+              what you got with your presentation skills.
             </h4>
           </section>
           <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
           <section>
-            <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/civilc' ,
-              pdfLink: '/assets/pdf/competition/ColloquiaCivil.pdf' }) %>
-              <%- include('../partials/competition/next-prev-buttons', {page: 13}) %>
+            <%- include('../partials/button', {link:
+            'https://payments.cashfree.com/forms/civilc' , pdfLink:
+            '/assets/pdf/competition/ColloquiaCivil.pdf' }) %> <%-
+            include('../partials/competition/next-prev-buttons', {page: 13}) %>
           </section>
-
         </div>
         <div class="number-pagination">
           <span>13</span>
@@ -452,16 +489,18 @@
           <section>
             <h2>AUCTION WARS</h2>
             <h4>
-              If Marvel and DC superheroes fascinate you then this auction is for you!
-              Form the ultimate squad of DC and MARVEL characters by participating in an auction and show the
-              competition that you are the superhero in managing your money by getting the best characters.
+              If Marvel and DC superheroes fascinate you then this auction is
+              for you! Form the ultimate squad of DC and MARVEL characters by
+              participating in an auction and show the competition that you are
+              the superhero in managing your money by getting the best
+              characters.
             </h4>
           </section>
           <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
           <section>
-            <%- include('../partials/competition/next-prev-buttons', {page: 14}) %>
+            <%- include('../partials/competition/next-prev-buttons', {page: 14})
+            %>
           </section>
-
         </div>
         <div class="number-pagination">
           <span>14</span>
@@ -475,18 +514,20 @@
           <section>
             <h2>ANALYSIS ACES</h2>
             <h4>
-              Interested in putting your guts and interest on the line for data science and finance? Don’t worry. We are
-              here for you with one of our most prestigious competitions, “Analysis Aces”. Put your talent to good use
-              by using your observational and analytical skills.
+              Interested in putting your guts and interest on the line for data
+              science and finance? Don’t worry. We are here for you with one of
+              our most prestigious competitions, “Analysis Aces”. Put your
+              talent to good use by using your observational and analytical
+              skills.
             </h4>
           </section>
           <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
           <section>
-            <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/analysisaces' ,
-              pdfLink: '/assets/pdf/competition/AnalysisAces.pdf' }) %>
-              <%- include('../partials/competition/next-prev-buttons', {page: 15}) %>
+            <%- include('../partials/button', {link:
+            'https://payments.cashfree.com/forms/analysisaces' , pdfLink:
+            '/assets/pdf/competition/AnalysisAces.pdf' }) %> <%-
+            include('../partials/competition/next-prev-buttons', {page: 15}) %>
           </section>
-
         </div>
         <div class="number-pagination">
           <span>15</span>
@@ -500,20 +541,21 @@
           <section>
             <h2>CALL OF DUTY</h2>
             <h4>
-              Showcase your gaming skills and unleash fury with your squad. Do your best in the battlefield and win
-              prizes to celebrate your victory!
-              Gear up, COD legends, and get ready to compete against the top gamers in this tournament because
-              Wissenaire’23, IIT BHUBANESWAR is hosting a thrilling gaming tournament with prize money.
-
+              Showcase your gaming skills and unleash fury with your squad. Do
+              your best in the battlefield and win prizes to celebrate your
+              victory! Gear up, COD legends, and get ready to compete against
+              the top gamers in this tournament because Wissenaire’23, IIT
+              BHUBANESWAR is hosting a thrilling gaming tournament with prize
+              money.
             </h4>
           </section>
           <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
           <section>
-            <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/callofdutymobile' ,
-              pdfLink: '/assets/pdf/competition/CODM.pdf' }) %>
-              <%- include('../partials/competition/next-prev-buttons', {page: 16}) %>
+            <%- include('../partials/button', {link:
+            'https://payments.cashfree.com/forms/callofdutymobile' , pdfLink:
+            '/assets/pdf/competition/CODM.pdf' }) %> <%-
+            include('../partials/competition/next-prev-buttons', {page: 16}) %>
           </section>
-
         </div>
         <div class="number-pagination">
           <span>16</span>
@@ -527,19 +569,21 @@
           <section>
             <h2>COUNTER-STRIKE</h2>
             <h4>
-              Are you a hard core gamer? Does the rattle of guns turn you on? Are you up for a real challenge?
-              CS: GO combines precise gunfight with tactical use of abilities. Use your game-sense to lead your team to
-              the path of victory on its 5v5 plant-defuse matches held on various concise maps. Team Wissenaire'23
-              invites you to compete with other kill-hungry players to emerge victorious in its CS: GO Tournament.
-              “Let’s have it, lads!”
-
+              Are you a hard core gamer? Does the rattle of guns turn you on?
+              Are you up for a real challenge? CS: GO combines precise gunfight
+              with tactical use of abilities. Use your game-sense to lead your
+              team to the path of victory on its 5v5 plant-defuse matches held
+              on various concise maps. Team Wissenaire'23 invites you to compete
+              with other kill-hungry players to emerge victorious in its CS: GO
+              Tournament. “Let’s have it, lads!”
             </h4>
           </section>
           <!-- <button type="button" class="buy-now-btn" name="button"></button> -->
           <section>
-            <%- include('../partials/button', {link: 'https://payments.cashfree.com/forms/csgo' ,
-              pdfLink: '/assets/pdf/competition/CSGO.pdf' }) %>
-              <%- include('../partials/competition/next-prev-buttons', {page: 17}) %>
+            <%- include('../partials/button', {link:
+            'https://payments.cashfree.com/forms/csgo' , pdfLink:
+            '/assets/pdf/competition/CSGO.pdf' }) %> <%-
+            include('../partials/competition/next-prev-buttons', {page: 17}) %>
           </section>
         </div>
         <div class="number-pagination">
@@ -549,60 +593,59 @@
     </div>
 
     <%- include('../partials/preLoader') %>
-      <script>
-        let preLoader = document.getElementById('preloader')
-        $(window).load(function () {
-          preLoader.style.display = 'none';
-        })
-      </script>
+    <script>
+      let preLoader = document.getElementById("preloader");
+      $(window).load(function () {
+        preLoader.style.display = "none";
+      });
+    </script>
 
-      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-      <script>
-        function redirectToLogin() {
-          swal({
-            title: "Authentication Required",
-            text: "You haven't logged into your profile. Kindly login and fill your profile before registration",
-            icon: "warning",
-            button: "Continue to Login",
-            dangerMode: true,
-          }).then((button) => {
-            if (button) {
-              window.location.href = "/auth/google";
-            } else {
-            }
-          });
-        }
-        function redirectToProfile() {
-          swal({
-            title: "Profile details required",
-            text: "Kindly fill your profile details before registration",
-            icon: "warning",
-            button: "Continue to Profile",
-            dangerMode: true,
-          }).then((button) => {
-            if (button) {
-              window.location.href = "/profile";
-            } else {
-            }
-          });
-        }
-        function continueToBooking(paymentLink) {
-          swal({
-            title: "Ready to book your slot",
-            text: `Enter the same email address (${"<%=participant.email%>"}) while filling the payment form. Click continue to continue your booking.`,
-            icon: "success",
-            button: "Continue to booking",
-            dangerMode: true,
-          }).then((button) => {
-            if (button) {
-              window.location.href = paymentLink;
-            }
-          });
-        }
-      </script>
-      <script src="https://unpkg.com/validator@13.7.0/validator.min.js"></script>
-      <script src="assets/competition/js/scrolling.js"></script>
-      <script src="/js/competition/next-prev-buttons.js"></script>
-</body>
-
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+      function redirectToLogin() {
+        swal({
+          title: "Authentication Required",
+          text: "You haven't logged into your profile. Kindly login and fill your profile before registration",
+          icon: "warning",
+          button: "Continue to Login",
+          dangerMode: true,
+        }).then((button) => {
+          if (button) {
+            window.location.href = "/auth/google";
+          } else {
+          }
+        });
+      }
+      function redirectToProfile() {
+        swal({
+          title: "Profile details required",
+          text: "Kindly fill your profile details before registration",
+          icon: "warning",
+          button: "Continue to Profile",
+          dangerMode: true,
+        }).then((button) => {
+          if (button) {
+            window.location.href = "/profile";
+          } else {
+          }
+        });
+      }
+      function continueToBooking(paymentLink) {
+        swal({
+          title: "Ready to book your slot",
+          text: `Enter the same email address (${"<%=participant.email%>"}) while filling the payment form. Click continue to continue your booking.`,
+          icon: "success",
+          button: "Continue to booking",
+          dangerMode: true,
+        }).then((button) => {
+          if (button) {
+            window.location.href = paymentLink;
+          }
+        });
+      }
+    </script>
+    <script src="https://unpkg.com/validator@13.7.0/validator.min.js"></script>
+    <script src="assets/competition/js/scrolling.js"></script>
+    <script src="/js/competition/next-prev-buttons.js"></script>
+  </body>
 </html>
