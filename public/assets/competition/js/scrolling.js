@@ -179,7 +179,7 @@ document.getElementById("s16").addEventListener("wheel", (e) => {
 document.getElementById("s17").addEventListener("wheel", (e) => {
   document.querySelector('input[class="slide-radio17"]').checked = false;
   if (e.deltaY > 0 || e.deltaX > 0) {
-    document.querySelector('input[class="slide-radio17"]').checked = true;
+    document.querySelector('input[class="slide-radio18"]').checked = true;
   } else {
     document.querySelector('input[class="slide-radio16"]').checked = true;
   }
@@ -187,9 +187,9 @@ document.getElementById("s17").addEventListener("wheel", (e) => {
  
 /* Slide-18 */
 document.getElementById("s18").addEventListener("wheel", (e) => {
-  document.querySelector('input[class="slide-radio18"]').checked = false;
+  document.querySelector('input[class="slide-radio17"]').checked = false;
   if (e.deltaY > 0 || e.deltaX > 0) {
-    document.querySelector('input[class="slide-radio18"]').checked = true;
+    document.querySelector('input[class="slide-radio19"]').checked = true;
   } else {
     document.querySelector('input[class="slide-radio17"]').checked = true;
   }
@@ -197,7 +197,7 @@ document.getElementById("s18").addEventListener("wheel", (e) => {
 document.getElementById("s19").addEventListener("wheel", (e) => {
   document.querySelector('input[class="slide-radio19"]').checked = false;
   if (e.deltaY > 0 || e.deltaX > 0) {
-    document.querySelector('input[class="slide-radio19"]').checked = true;
+    document.querySelector('input[class="slide-radio20"]').checked = true;
   } else {
     document.querySelector('input[class="slide-radio18"]').checked = true;
   }
@@ -205,7 +205,7 @@ document.getElementById("s19").addEventListener("wheel", (e) => {
 document.getElementById("s20").addEventListener("wheel", (e) => {
   document.querySelector('input[class="slide-radio20"]').checked = false;
   if (e.deltaY > 0 || e.deltaX > 0) {
-    document.querySelector('input[class="slide-radio20"]').checked = true;
+    document.querySelector('input[class="slide-radio21"]').checked = true;
   } else {
     document.querySelector('input[class="slide-radio19"]').checked = true;
   }
@@ -213,18 +213,60 @@ document.getElementById("s20").addEventListener("wheel", (e) => {
 document.getElementById("s21").addEventListener("wheel", (e) => {
   document.querySelector('input[class="slide-radio21"]').checked = false;
   if (e.deltaY > 0 || e.deltaX > 0) {
-    document.querySelector('input[class="slide-radio21"]').checked = true;
+    document.querySelector('input[class="slide-radio22"]').checked = true;
   } else {
     document.querySelector('input[class="slide-radio20"]').checked = true;
   }
 });
+
+document.getElementById("s22").addEventListener("wheel", (e) => {
+  document.querySelector('input[class="slide-radio22"]').checked = false;
+  if (e.deltaY > 0 || e.deltaX > 0) {
+    document.querySelector('input[class="slide-radio23"]').checked = true;
+  } else {
+    document.querySelector('input[class="slide-radio21"]').checked = true;
+  }
+});
+document.getElementById("s23").addEventListener("wheel", (e) => {
+  document.querySelector('input[class="slide-radio23"]').checked = false;
+  if (e.deltaY > 0 || e.deltaX > 0) {
+    document.querySelector('input[class="slide-radio24"]').checked = true;
+  } else {
+    document.querySelector('input[class="slide-radio22"]').checked = true;
+  }
+});
+document.getElementById("s24").addEventListener("wheel", (e) => {
+  document.querySelector('input[class="slide-radio24"]').checked = false;
+  if (e.deltaY > 0 || e.deltaX > 0) {
+    document.querySelector('input[class="slide-radio25"]').checked = true;
+  } else {
+    document.querySelector('input[class="slide-radio23"]').checked = true;
+  }
+});
+document.getElementById("s25").addEventListener("wheel", (e) => {
+  document.querySelector('input[class="slide-radio25"]').checked = false;
+  if (e.deltaY > 0 || e.deltaX > 0) {
+    document.querySelector('input[class="slide-radio26"]').checked = true;
+  } else {
+    document.querySelector('input[class="slide-radio24"]').checked = true;
+  }
+});
+document.getElementById("s26").addEventListener("wheel", (e) => {
+  document.querySelector('input[class="slide-radio26"]').checked = false;
+  if (e.deltaY > 0 || e.deltaX > 0) {
+    document.querySelector('input[class="slide-radio1"]').checked = true;
+  } else {
+    document.querySelector('input[class="slide-radio25"]').checked = true;
+  }
+});
+
 
 const searchParams = new URLSearchParams(document.location.search);
 if (searchParams.has("page")) {
   const pageStr = searchParams.get("page");
   if (validator.isInt(pageStr, {
     min: 1,
-    max: 17,
+    max: 26,
     allow_leading_zeroes: false
   })) {
     const pageNum = Number.parseInt(pageStr);
