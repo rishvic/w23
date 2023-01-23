@@ -23,6 +23,7 @@ router.get("/",renderController.renderPreloader)
 router.get("/profile", renderController.renderProfile);
 router.get("/about", renderController.renderAbout);
 router.get("/competitions", renderController.renderCompetitions);
+router.get("/competitionsIntro", renderController.renderCompetitionsIntro);
 router.get("/workshops", renderController.renderWorkshops);
 router.get("/sitp", renderController.renderSitpCourses);
 router.get("/guest-lectures", renderController.renderGuestLectures);

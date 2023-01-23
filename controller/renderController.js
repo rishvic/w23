@@ -27,6 +27,16 @@ exports.renderCompetitions = async (req, res) => {
   }
 };
 
+exports.renderCompetitionsIntro = async (req, res) => {
+  //render Competitions
+  if (req.user) {
+    const user = await findUser(req.user.emails[0].value);
+    res.render("competition/intro", { participant: user });
+  } else {
+    res.render("competition/intro", { participant: false });
+  }
+};
+
 exports.renderWorkshops = async (req, res) => {
   //render Workshops
   if (req.user) {

@@ -5,18 +5,18 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
+.comingSoonBody {
   width: 100%;
   height: 100vh;
   background: #001122;
   display: grid;
   place-items: center;
   font-family: "Poppins", sans-serif;
-  font-size: 5rem;
   font-weight: 800;
 }
 .loader {
   perspective: 1000px;
+  font-size: 8vw;
   -webkit-perspective: 1000px;
 }
 .loader > span {
