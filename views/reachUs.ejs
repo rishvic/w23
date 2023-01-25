@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wissenaire'22 | Reach us</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/blue_favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Exo+2:600,700,800,900"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style>
+      body {
+        margin: 0;
+        background-color: #121212;
+      }
+      .globeViz {
+        position: absolute;
+        display: inline;
+        z-index: -1;
+        top: 0;
+        left: 0;
+      }
+      .top-layer {
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+        top: 12vh;
+        left: 0;
+      }
+      .logo {
+        margin: 50px auto;
+        text-align: center;
+      }
+      .logo a {
+        text-decoration: none;
+        -webkit-transform: perspective(2.5em) rotateX(12deg) scaleY(0.8);
+        -moz-transform: perspective(2.5em) rotateX(12deg) scaleY(0.8);
+        -ms-transform: perspective(2.5em) rotateX(12deg) scaleY(0.8);
+        -o-transform: perspective(2.5em) rotateX(12deg) scaleY(0.8);
+        transform: perspective(2.5em) rotateX(12deg) scaleY(0.8);
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        transition: all 0.5s;
+        display: inline-block;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 5em;
+        font-weight: 700;
+        font-family: "Exo 2";
+        line-height: 0.8;
+        color: #9cc9df;
+        text-shadow: 0 -1px 15px rgba(0, 0, 0, 0.9), 0 1px 0 #7dc4e6,
+          0 3px 0 #289acf, 0 5px 0 #137492, 0 7px 0 #03678e, 0 9px 0 #037d93,
+          0 6px 50px rgba(92, 241, 252, 0.8);
+      }
+      .logo a:first-line {
+        font-size: 0.8em;
+      }
+      .logo a:hover {
+        -webkit-transform: perspective(8em) rotateX(5deg) scale(1.2);
+        -moz-transform: perspective(8em) rotateX(5deg) scale(1.2);
+        -ms-transform: perspective(8em) rotateX(5deg) scale(1.2);
+        -o-transform: perspective(8em) rotateX(5deg) scale(1.2);
+        transform: perspective(8em) rotateX(5deg) scale(1.2);
+        text-shadow: 0 -1px 15px rgb(0, 0, 0), 0 1px 0 #036c7f, 0 2px 0 #037584,
+          0 0px 0 #037989, 0 1px 0 #03858e, 0 2px 0 #038293,
+          0 2px 30px rgba(92, 220, 252, 0.6);
+      }
+      .wissLogo {
+        width: 200px;
+      }
+      body {
+        cursor: none !important;
+      }
+      .cur {
+        height: 31px;
+        width: 31px;
+        z-index: 99999999;
+        pointer-events: none;
+        /* background: grey;*/
+        border-radius: 50%;
+        position: absolute;
+        /*animation: cursorAnim .5s infinite alternate;*/
+        animation: rotate 4s infinite linear;
+        transition: all 0.3s ease;
+        transition-property: background, transform;
+        transform-origin: 100%, 100%;
+      }
+      /* @media screen and (max-width: 1279px) {
+  .cur {
+    display: none;
+  }
+  body {
+    cursor: default;
+  }
+} */
+      .main-cur {
+        animation: none;
+        margin: 0px;
+        content: "";
+        width: 0.1px;
+        height: 0.1px;
+        border: 10.5px solid #1a28cf;
+        position: absolute;
+        border-radius: 50%;
+        /* opacity: .5; */
+        top: 4.5px;
+        left: 4.5px;
+        /* transform: translate(-50%, -50%); */
+        animation: cursorAnim 0.5s infinite alternate;
+      }
+      .satelite {
+        height: 30px;
+        margin: 30px;
+        transform: rotate(-1deg);
+        /* transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    */
+      }
+      @keyframes rotate {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(359deg);
+        }
+      }
+      @keyframes cursorAnim {
+        from {
+          transform: scale(1);
+        }
+        to {
+          transform: scale(0.7);
+        }
+      }
+      @keyframes cursorClick {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(2);
+        }
+        100% {
+          transform: scale(1);
+          opacity: 0;
+        }
+      }
+      .expand {
+        animation: cursorClick 0.5s forwards;
+        border: 1px solid blue;
+      }
+      .link-grow {
+        transform: scale(2);
+        background: #1a28cf;
+      }
+      /* @media only screen and (max-width: 380px) {
+  .cur {
+    display: none;
+  }
+  body {
+    cursor: default;
+  }
+} */
+    </style>
+
+    <!-- <link rel="stylesheet" href="./css/css1.css"> -->
+    <link rel="stylesheet" href="./css/css2.css" />
+
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.6/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Abril+Fatface"
+    />
+    <link rel="stylesheet" href="./css/hover-min.css" />
+  </head>
+
+  <body>
+    <!-- <header>
+      <a href="./index.html"
+        ><img class="wissLogo" src="./logo.png" alt=""
+      /></a>
+      <div class="wrap">
+        <div class="icons">
+          <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+          <div style="display: flex">
+            <a style="margin: 0" href="">Sign in</a>
+          </div>
+        </div>
+        <div class="menuIcon js-menuBtn"></div>
+      </div>
+      <nav class="global-nav">
+        <ul class="global-nav__list">
+          <li><a href="./about-wissenaire">ABOUT</a></li>
+          <li><a href="./competitions">COMPETITIONS</a></li>
+          <li><a href="./workshop">WORKSHOPS</a></li>
+          <li><a href="./guest-lectures">GUEST LECTURES</a></li>
+          <li><a href="./exhibits">EXHIBITS</a></li>
+          <li><a href="./initiatives">INITIATIVES</a></li>
+          <li><a href="./highlights">HIGHLIGHTS</a></li>
+          <li><a href="./ca">CAMPUS AMBASSADOR</a></li>
+          <li><a href="./qwissenaire">QWISSENAIRE</a></li>
+          <li><a href="./teams">TEAM</a></li>
+          <li><a href="./sponsors">SPONSORS</a></li>
+          <li><a href="./contact">REACH US</a></li>
+          <li class="global-nav__sns">
+            <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="curtain"></div>
+      <div class="loader"></div>
+    </header> -->
+    <%- include('partials/navbar')%>
+    <div class="top-layer">
+      <div>
+        <div class="container">
+          <img
+            class="bg-img"
+            src="https://mariongrandvincent.github.io/HTML-Personal-website/img-codePen/bg.jpg"
+            alt=""
+          />
+          <div class="menu">
+            <a href="#connexion" class="btn-connexion"><h2>Contact us</h2></a>
+          </div>
+          <div class="connexion">
+            <div class="contact-form">
+              <label>Name</label>
+              <input placeholder="" type="text" />
+
+              <label>Email</label>
+              <input placeholder="" type="text" />
+
+              <label>Message</label>
+              <textarea rows="3"></textarea>
+              <input class="submit" value="Submit" type="submit" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cur" id="circle">
+      <div class="main-cur"></div>
+      <img class="satelite" src="https://bit.ly/30JAPdZ" alt="" />
+    </div>
+
+    <script src="./js/js1.js"></script>
+    <script src="./js/js2.js"></script>
+    <script src="./js/js3.js"></script>
+    <script src="./js/js4.js"></script>
+    <script src="./js/js5.js"></script>
+    <script src="./js/js6.js"></script>
+    <script>
+      let links = document.querySelector(".main-content a");
+      const cursors = document.querySelector(".cur");
+      document.addEventListener("mousemove", (e) => {
+        let x = e.pageX;
+        let y = e.pageY;
+        cursors.setAttribute(
+          "style",
+          "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;"
+        );
+      });
+      document.addEventListener("click", () => {
+        cursors.classList.add("expand");
+        setTimeout(() => {
+          cursors.classList.remove("expand");
+        }, 500);
+      });
+    </script>
+  </body>
+</html>
