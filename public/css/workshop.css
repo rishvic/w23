@@ -18,14 +18,18 @@ html {
   width: 100%;
   z-index: 1000;
 }
-
 .header-text {
-  color: rgb(251, 194, 38);
-  font-size: 6vw !important;
+  color: #f5af19;
+  font-size: 3vw !important;
   font-weight: bold;
   text-align: center;
   font-family: The Blast;
   src: url("../assets/fonts/The\ Blast.otf") format("opentype");
+}
+@media screen and (max-width: 768px) {
+  .header-text {
+    font-size: 6vw !important;
+  }
 }
 
 body {
@@ -64,37 +68,37 @@ body {
 
 .inside-page__heading--city,
 .card-front__text-view--city {
-  color: #040446;
+  color: black;
 }
 
 .inside-page__heading--ski,
 .card-front__text-view--ski {
 
-  color: #040446;
+  color: black;
 }
 
 .inside-page__heading--beach,
 .card-front__text-view--beach {
 
-  color: #040446;
+  color: black;
 }
 
 .inside-page__heading--camping,
 .card-front__text-view--camping {
 
-  color: #040446;
+  color: black;
 }
 
 .inside-page__heading--ethical,
 .card-front__text-view--ethical {
 
-  color: #040446;
+  color: black;
 }
 
 .inside-page__heading--alml,
 .card-front__text-view--alml {
 
-  color: #040446;
+  color: black;
 }
 
 /* Front cover */
@@ -159,57 +163,57 @@ body {
 }
 
 .inside-page__btn--city {
-  border-color: #040446;
-  color: #040446;
+  border-color: black;
+  color: black;
 }
 
 .inside-page__btn--city::before {
-  background-color: #040446;
+  background-color: black;
 }
 
 .inside-page__btn--ski {
-  border-color: #040446;
-  color: #040446;
+  border-color: black;
+  color: black;
 }
 
 .inside-page__btn--ski::before {
-  background-color: #040446;
+  background-color: black;
 }
 
 .inside-page__btn--beach {
-  border-color: #040446;
-  color: #040446;
+  border-color: black;
+  color: black;
 }
 
 .inside-page__btn--beach::before {
-  background-color: #040446;
+  background-color: black;
 }
 
 .inside-page__btn--camping {
-  border-color: #040446;
-  color: #040446;
+  border-color: black;
+  color: black;
 }
 
 .inside-page__btn--ethical {
-  border-color: #040446;
-  color: #040446;
+  border-color: black;
+  color: black;
 }
 
 .inside-page__btn--alml {
-  border-color: #040446;
-  color: #040446;
+  border-color: black;
+  color: black;
 }
 
 .inside-page__btn--camping::before {
-  background-color: #040446;
+  background-color: black;
 }
 
 .inside-page__btn--ethical::before {
-  background-color: #040446;
+  background-color: black;
 }
 
 .inside-page__btn--alml::before {
-  background-color: #040446;
+  background-color: black;
 }
 
 .inside-page__btn:hover {
@@ -270,7 +274,7 @@ body {
 
 /* A container to hold the flip card and the inside page */
 .card {
-  background-color: rgba(0, 0, 0, .05);
+  /* background-color: rgba(0, 0, 0, .05); */
   box-shadow: -.1rem 1.7rem 6.6rem -3.2rem rgba(0, 0, 0, 0.5);
   height: 40vh;
   position: relative;
@@ -340,39 +344,27 @@ body {
 }
 
 .card-front__tp--city {
-  background: linear-gradient(to bottom,
-      #888,
-      #040446);
+  background-color: rgb(33, 32, 32);
 }
 
 .card-front__tp--ski {
-  background: linear-gradient(to bottom,
-      #888,
-      #040446);
+  background-color: rgb(33, 32, 32);
 }
 
 .card-front__tp--beach {
-  background: linear-gradient(to bottom,
-      #888,
-      #040446);
+  background-color: rgb(33, 32, 32);
 }
 
 .card-front__tp--camping {
-  background: linear-gradient(to bottom,
-      #888,
-      #040446);
+  background-color: rgb(33, 32, 32);
 }
 
 .card-front__tp--ethical {
-  background: linear-gradient(to bottom,
-      #888,
-      #040446);
+  background-color: rgb(33, 32, 32);
 }
 
 .card-front__tp--alml {
-  background: linear-gradient(to bottom,
-      #888,
-      #040446);
+  background-color: rgb(33, 32, 32);
 }
 
 /* Front card's bottom section */
@@ -471,27 +463,27 @@ body {
 
   .card {
     width: 25vw;
-    height: 45vh;
+    height: 36vh;
   }
 
   .card:hover {
-    width: 46vw;
+    width: 37vw;
   }
 
   .flip-card {
     width: 23vw;
-    height: 45vh;
+    height: 36vh;
 
   }
 
   .card-front {
     width: 23vw;
-    height: 45vh;
+    height: 36vh;
   }
 
   .inside-page {
     width: 23vw;
-    height: 45vh;
+    height: 36vh;
   }
 }
 
@@ -548,7 +540,7 @@ body {
 
   .card {
     width: 50vw;
-    height: 45vh;
+    height: 36vh;
   }
 
   .card:hover {
@@ -562,19 +554,22 @@ body {
 
   .flip-card {
     width: 50vw;
-    height: 45vh;
+    height: 36vh;
 
   }
 
   .card-front {
     width: 50vw;
-    height: 45vh;
+    height: 36vh;
   }
 
   .inside-page {
     width: 50vw;
-    height: 45vh;
+    height: 36vh;
   }
+  /* .inside-page__text{
+    display: none;
+  } */
 }
 
 /* .coolCursor{

@@ -32,12 +32,11 @@ body {
 .timeline ul li div {
     position: relative;
     bottom: 0;
-    width: 580px;
+    width: 250px;
     padding: 20px;
     background: #fff;
     box-shadow: 4px 13px 30px 1px rgba(252, 56, 56, 0.2);
     border-radius: 5px;
-    display: flex;
     align-items: center;
 }
 .timeline ul li div time {
@@ -66,10 +65,10 @@ body {
     margin-right: 10px;
 }
 .timeline ul li:nth-of-type(odd) > div {
-    left: 45px;
+    left: 100px;
 }
 .timeline ul li:nth-of-type(even) > div {
-    left: -610px;
+    left: -350px;
 }
 .timeline ul li div {
     visibility: hidden;
@@ -86,6 +85,8 @@ body {
     transform: none;
     visibility: visible;
     opacity: 1;
+    display: flex;
+    flex-wrap: wrap;
 }
 @media screen and (max-width: 900px) {
     .timeline ul li div {
@@ -111,6 +112,22 @@ body {
         width: calc(100vw - 91px);
    }
     .timeline ul li:nth-of-type(even) > div {
-        left: 45px;
+        left: 50px;
    }
+   .timeline ul li:nth-of-type(odd) > div {
+    left: 50px;
 }
+}
+
+.footer {
+    background-color: #333;
+    /* margin-top: 3rem; */
+    padding: 1rem 0;
+    width: 100%;
+  }
+  
+  .footer-text {
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+  }

@@ -21,10 +21,35 @@
       href="assets/workshop/img/apple-touch-icon.png"
       rel="apple-touch-icon"
     />
+    <style>
+      .header {
+        /* background-color: rgb(79, 74, 74); */
+        /* margin-top: 3rem; */
+        padding: 1rem 0;
+        width: 100%;
+        z-index: 1000;
+      }
+      .header-text {
+        color: #f5af19;
+        font-size: 3vw !important;
+        font-weight: bold;
+        text-align: center;
+        font-family: The Blast;
+        src: url("../assets/fonts/The\ Blast.otf") format("opentype");
+      }
+      @media screen and (max-width: 768px) {
+        .header-text {
+          font-size: 6vw !important;
+        }
+      }
+        
+    </style>
   </head>
   <body>
     <%- include('../partials/navBar.ejs') %>
-
+    <header class="header">
+      <p class="header-text">Competitions</p>
+    </header>
     <section class="timeline">
       <ul>
         <li>
@@ -34,15 +59,10 @@
               <h1>Robo Wars</h1>
               <a href="/competitions?page=22"><p>View Me</p></a>
             </div>
-            <div class="scientist">
+            <div class="discovery">
               <h1>Trekkon</h1>
               <a href="/competitions?page=24"><p>View Me</p></a>
             </div>
-          </div>
-        </li>
-        <li>
-          <div>
-            <time>Yanthrix</time>
             <div class="discovery">
               <h1>Kick Off</h1>
               <a href="/competitions"><p>View Me</p></a>
@@ -51,7 +71,7 @@
               <h1>Robo Race</h1>
               <a href="/competitions?page=25"><p>View Me</p></a>
             </div>
-            <div class="scientist">
+            <div class="discovery">
               <h1>Maze Solver</h1>
               <a href="/competitions?page=26"><p>View Me</p></a>
             </div>
@@ -65,20 +85,15 @@
               <h1>Computer Science</h1>
               <a href="/competitions?page=19"><p>View Me</p></a>
             </div>
-            <div class="scientist">
+            <div class="discovery">
               <h1>Electrical</h1>
               <a href="/competitions?page=12"><p>View Me</p></a>
             </div>
-          </div>
-        </li>
-        <li>
-          <div>
-            <time>COLLOQUIA</time>
             <div class="discovery">
               <h1>Civil</h1>
               <a href="/competitions?page=13"><p>View Me</p></a>
             </div>
-            <div class="scientist">
+            <div class="discovery">
               <h1>Mechanical</h1>
               <a href="/competitions?page=8"><p>View Me</p></a>
             </div>
@@ -92,7 +107,7 @@
               <h1>Shutter</h1>
               <a href="/competitions?page=3"><p>View Me</p></a>
             </div>
-            <div class="scientist">
+            <div class="discovery">
               <h1>Scientoons</h1>
               <a href="/competitions?page=4"><p>View Me</p></a>
             </div>
@@ -110,7 +125,7 @@
               <h1>Call Of Duty: Mobile</h1>
               <a href="/competitions?page=16"><p>View Me</p></a>
             </div>
-            <div class="scientist">
+            <div class="discovery">
               <h1>CSGO</h1>
               <a href="/competitions?page=17"><p>View Me</p></a>
             </div>
@@ -124,9 +139,17 @@
               <h1>Blind Code</h1>
               <a href="/competitions?page=10"><p>View Me</p></a>
             </div>
-            <div class="scientist">
+            <div class="discovery">
               <h1>Hack the Box</h1>
               <a href="/competitions?page=20"><p>View Me</p></a>
+            </div>
+            <div class="discovery">
+              <h1>Counter Cypher- black box event</h1>
+              <a href="/competitions?page=11"><p>View Me</p></a>
+            </div>
+            <div class="discovery">
+              <h1>Code Hasten</h1>
+              <a href="/competitions?page=18"><p>View Me</p></a>
             </div>
           </div>
         </li>
@@ -142,23 +165,9 @@
               <h1>Archimedes’ Dunk</h1>
               <a href="/competitions?page=6"><p>View Me</p></a>
             </div>
-            <div class="scientist">
+            <div class="discovery">
               <h1>Truss the Frame</h1>
               <a href="/competitions?page=2"><p>View Me</p></a>
-            </div>
-          </div>
-        </li>
-
-        <li>
-          <div>
-            <time>MATRICKS</time>
-            <div class="discovery">
-              <h1>Counter Cypher- black box event</h1>
-              <a href="/competitions?page=11"><p>View Me</p></a>
-            </div>
-            <div class="scientist">
-              <h1>Code Hasten</h1>
-              <a href="/competitions?page=18"><p>View Me</p></a>
             </div>
           </div>
         </li>
@@ -170,33 +179,28 @@
               <h1>Analysis Aces</h1>
               <a href="/competitions?page=15"><p>View Me</p></a>
             </div>
-            <div class="scientist">
+            <div class="discovery">
               <h1>TradeSmith</h1>
               <a href="/competitions?page="><p>View Me</p></a>
             </div>
-          </div>
-        </li>
-        <li>
-          <div>
-            <time>EXECUTIVE SUITE</time>
             <div class="discovery">
               <h1>Mad-Ads</h1>
               <a href="/competitions?page=21"><p>View Me</p></a>
             </div>
-            <div class="scientist">
+            <div class="discovery">
               <h1>Auction War</h1>
               <a href="/competitions?page=14"><p>View Me</p></a>
             </div>
           </div>
         </li>
-        <li>
+        <li style="margin-bottom: 20px;">
           <div>
             <time>Special Events</time>
             <div class="discovery">
               <h1>MEMORY CHALLENGE</h1>
               <a href="/competitions?page=9"><p>View Me</p></a>
             </div>
-            <div class="scientist">
+            <div class="discovery">
               <h1>SCHOOL CHAMP</h1>
               <a href="/competitions?page=1"><p>View Me</p></a>
             </div>
@@ -204,6 +208,9 @@
         </li>
       </ul>
     </section>
+    <footer class="footer">
+      <p class="footer-text">&copy; Wissenaire'23</p>
+  </footer>
   </body>
   <script>
     var items = document.querySelectorAll(".timeline li");
