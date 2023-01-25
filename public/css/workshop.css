@@ -119,7 +119,7 @@ body {
 .inside-page__text {
   color: #333;
   max-height: 50%;
-  overflow: hidden;
+  overflow-y: scroll;
 }
 
 /* Icons ===========================================*/
@@ -567,9 +567,9 @@ body {
     width: 50vw;
     height: 36vh;
   }
-  /* .inside-page__text{
-    display: none;
-  } */
+  .inside-page__text{
+    overflow-y: scroll;
+  }
 }
 
 /* .coolCursor{
