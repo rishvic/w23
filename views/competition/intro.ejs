@@ -4,9 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
     <title>Competitions List | Wissenaire'23</title>
     <link rel="stylesheet" href="css/competitionIntro.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -23,6 +27,13 @@
       rel="apple-touch-icon"
     />
     <style>
+      @font-face {
+        font-family: "cybox";
+        src: url("../../assets/font/Furore.otf");
+        font-weight: normal;
+        font-style: normal;
+        font-display: block;
+      }
       .header {
         /* background-color: rgb(79, 74, 74); */
         /* margin-top: 3rem; */
@@ -31,11 +42,11 @@
         z-index: 1000;
       }
       .header-text {
-        color: #f5af19;
+        color: #fff;
         font-size: 3vw !important;
         font-weight: bold;
         text-align: center;
-        font-family: The Blast;
+        font-family: "cybox", sans-serif;
         src: url("../assets/fonts/The\ Blast.otf") format("opentype");
       }
       @media screen and (max-width: 768px) {
@@ -43,13 +54,14 @@
           font-size: 6vw !important;
         }
       }
-        
     </style>
   </head>
   <body class="introBody">
     <%- include('../partials/navBar.ejs') %>
     <header class="header">
-      <p class="header-text">Competitions</p>
+      <p class="header-text">
+        Competitions
+      </p>
     </header>
     <section class="timeline">
       <ul>
@@ -194,7 +206,7 @@
             </div>
           </div>
         </li>
-        <li style="margin-bottom: 20px;">
+        <li style="margin-bottom: 20px">
           <div>
             <time>Special Events</time>
             <div class="discovery">
@@ -211,9 +223,9 @@
     </section>
     <footer class="footer">
       <p class="footer-text">&copy; Wissenaire'23</p>
-  </footer>
+    </footer>
   </body>
-  <script>
+  <!-- <script>
     var items = document.querySelectorAll(".timeline li");
 
     function isElementInViewport(el) {
@@ -242,5 +254,5 @@
 
     window.addEventListener("load", callbackFunc);
     window.addEventListener("scroll", callbackFunc);
-  </script>
+  </script> -->
 </html>

@@ -10,6 +10,14 @@
   z-index: 1;
 }
 
+@font-face {
+  font-family: "cybox";
+  src: url("../../assets/font/Furore.otf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
 .navigation-left {
   margin-left: -33px;
 }
