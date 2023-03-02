@@ -145,6 +145,9 @@ exports.renderProfile = async (req, res) => {
   }
 };
 
+exports.renderNewHome = async (req, res) => {
+  res.render("newLanding");
+};
 exports.renderHome = async (req, res) => {
   if (req.user) {
     const user = await findUser(req.user.emails[0].value);
