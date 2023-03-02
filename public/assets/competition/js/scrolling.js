@@ -254,9 +254,18 @@ document.getElementById("s25").addEventListener("wheel", (e) => {
 document.getElementById("s26").addEventListener("wheel", (e) => {
   document.querySelector('input[class="slide-radio26"]').checked = false;
   if (e.deltaY > 0 || e.deltaX > 0) {
-    document.querySelector('input[class="slide-radio1"]').checked = true;
+    document.querySelector('input[class="slide-radio27"]').checked = true;
   } else {
     document.querySelector('input[class="slide-radio25"]').checked = true;
+  }
+});
+
+document.getElementById("s27").addEventListener("wheel", (e) => {
+  document.querySelector('input[class="slide-radio27"]').checked = false;
+  if (e.deltaY > 0 || e.deltaX > 0) {
+    document.querySelector('input[class="slide-radio1"]').checked = true;
+  } else {
+    document.querySelector('input[class="slide-radio26"]').checked = true;
   }
 });
 
@@ -266,7 +275,7 @@ if (searchParams.has("page")) {
   const pageStr = searchParams.get("page");
   if (validator.isInt(pageStr, {
     min: 1,
-    max: 26,
+    max: 27,
     allow_leading_zeroes: false
   })) {
     const pageNum = Number.parseInt(pageStr);
