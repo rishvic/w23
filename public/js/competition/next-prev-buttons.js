@@ -1,6 +1,6 @@
 "use strict";
 
-const pageCount = 27;
+const pageCount = 28;
 const nextOnClicks = [];
 const prevOnClicks = [];
 
